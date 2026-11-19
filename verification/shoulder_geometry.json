@@ -1,0 +1,78 @@
+{
+  "leg_1_shoulder_joint": {
+    "q_horizontal_rad": 1.1698748636490564e-08,
+    "q_horizontal_deg": 6.702889224553358e-07,
+    "lower_rad": -0.5235987638995502,
+    "upper_rad": 0.5235987872970475,
+    "lower_deg": -29.999999329711077,
+    "upper_deg": 30.000000670288923,
+    "CAD_zero_shoulder_to_hip_dz_m": 6.908114075774509e-10,
+    "horizontal_shoulder_to_hip_vector_source_m": [
+      -0.05904987775485486,
+      0.018575470083071723,
+      1.1070021512681004e-18
+    ],
+    "shoulder_axis_source": [
+      -7.960769793185574e-06,
+      -0.9999999999683131,
+      6.486137440171545e-42
+    ]
+  },
+  "leg_2_shoulder_joint": {
+    "q_horizontal_rad": -0.046908288301251044,
+    "q_horizontal_deg": -2.687646943844579,
+    "lower_rad": -0.5705070638995499,
+    "upper_rad": 0.47669048729704777,
+    "lower_deg": -32.68764694384458,
+    "upper_deg": 27.31235305615542,
+    "CAD_zero_shoulder_to_hip_dz_m": -0.0027689199161499744,
+    "horizontal_shoulder_to_hip_vector_source_m": [
+      -0.05904997633738657,
+      0.018575156694479907,
+      8.045896055175329e-18
+    ],
+    "shoulder_axis_source": [
+      -2.65358979335273e-06,
+      -0.9999999999964793,
+      2.87125e-18
+    ]
+  },
+  "leg_3_shoulder_joint": {
+    "q_horizontal_rad": -1.7806587762070336e-06,
+    "q_horizontal_deg": -0.0001020242326295932,
+    "lower_rad": -0.523600556257075,
+    "upper_rad": 0.5235969949395226,
+    "lower_deg": -30.00010202423263,
+    "upper_deg": 29.99989797576737,
+    "CAD_zero_shoulder_to_hip_dz_m": 3.917453901520439e-08,
+    "horizontal_shoulder_to_hip_vector_source_m": [
+      0.022000025851726324,
+      0.01882499993590496,
+      3.4626718536804017e-18
+    ],
+    "shoulder_axis_source": [
+      -2.916709441522999e-09,
+      -0.9999999999961413,
+      -2.778014305410248e-06
+    ]
+  },
+  "leg_4_shoulder_joint": {
+    "q_horizontal_rad": -1.7806587762070336e-06,
+    "q_horizontal_deg": -0.0001020242326295932,
+    "lower_rad": -0.523600556257075,
+    "upper_rad": 0.5235969949395226,
+    "lower_deg": -30.00010202423263,
+    "upper_deg": 29.99989797576737,
+    "CAD_zero_shoulder_to_hip_dz_m": 3.917453901520439e-08,
+    "horizontal_shoulder_to_hip_vector_source_m": [
+      0.022000025851726324,
+      0.01882499993590496,
+      3.4626718536804017e-18
+    ],
+    "shoulder_axis_source": [
+      -2.916709441522999e-09,
+      -0.9999999999961413,
+      -2.778014305410248e-06
+    ]
+  }
+}

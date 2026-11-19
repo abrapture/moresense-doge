@@ -1,0 +1,248 @@
+{
+  "coordinate_system": "All primitive centers/sizes are in raw STL mesh coordinates, meters. Apply each visual origin before applying link world transform. URDF cylinder default axis Z; rotation RPY = [-pi/2,0,0] maps +Z to +Y.",
+  "status": "Conservative geometric proposals for external collision proxies. Hollow openings filled by boxes; keep self-collision disabled until range-of-motion collision review. Foot ring exterior circular profile is CAD-derived, not an assertion about rubber pad existence.",
+  "knees": {
+    "KneeL.stl": {
+      "foot": {
+        "type": "cylinder",
+        "center": [
+          0.11,
+          0.045813098549842834,
+          0.0
+        ],
+        "radius": 0.0125,
+        "length": 0.020573802292346954,
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "rpy": [
+          -1.5707963267948966,
+          0,
+          0
+        ],
+        "fit_evidence": "Outer circular cylinder x-z center=(0.110,0), r=0.0125; inner bore radius=0.0105; all triangle vertices on r=0.0125 within 3e-6 m define Y envelope."
+      },
+      "shank_boxes": [
+        {
+          "type": "box",
+          "center": [
+            0.035101542808115484,
+            0.037099999375641346,
+            0.0
+          ],
+          "size": [
+            0.029796914383769038,
+            0.03710000030696392,
+            0.027000000700354576
+          ],
+          "range_x": [
+            0.020203085616230965,
+            0.05
+          ]
+        },
+        {
+          "type": "box",
+          "center": [
+            0.0625,
+            0.03694413381457821,
+            0.0010792352022966738
+          ],
+          "size": [
+            0.024999999999999994,
+            0.03505600940752997,
+            0.02484153029576123
+          ],
+          "range_x": [
+            0.05,
+            0.075
+          ]
+        },
+        {
+          "type": "box",
+          "center": [
+            0.08625,
+            0.04033167366515802,
+            0.00544029186831373
+          ],
+          "size": [
+            0.022500000000000006,
+            0.03129210404699247,
+            0.016119416963727116
+          ],
+          "range_x": [
+            0.075,
+            0.0975
+          ]
+        },
+        {
+          "type": "box",
+          "center": [
+            0.10397340536117554,
+            0.04422144219279289,
+            0.004717300646007061
+          ],
+          "size": [
+            0.012946810722351071,
+            0.02375711500644684,
+            0.017565399408340454
+          ],
+          "purpose": "Small upper connector beyond x=0.0975 outside the circular foot; optional for first contact-only proxy."
+        }
+      ]
+    },
+    "KneeR.stl": {
+      "foot": {
+        "type": "cylinder",
+        "center": [
+          0.11,
+          -0.008713099057786167,
+          0.0
+        ],
+        "radius": 0.0125,
+        "length": 0.02057380066253245,
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "rpy": [
+          -1.5707963267948966,
+          0,
+          0
+        ],
+        "fit_evidence": "Outer circular cylinder x-z center=(0.110,0), r=0.0125; inner bore radius=0.0105; all triangle vertices on r=0.0125 within 3e-6 m define Y envelope."
+      },
+      "shank_boxes": [
+        {
+          "type": "box",
+          "center": [
+            0.035101542808115484,
+            0.0,
+            0.0
+          ],
+          "size": [
+            0.029796914383769038,
+            0.03709999844431877,
+            0.027000000700354576
+          ],
+          "range_x": [
+            0.020203085616230965,
+            0.05
+          ]
+        },
+        {
+          "type": "box",
+          "center": [
+            0.0625,
+            0.00015586593844368023,
+            0.0010792352022966738
+          ],
+          "size": [
+            0.024999999999999994,
+            0.03505601051541403,
+            0.02484153029576123
+          ],
+          "range_x": [
+            0.05,
+            0.075
+          ]
+        },
+        {
+          "type": "box",
+          "center": [
+            0.08625,
+            -0.003231673036867,
+            0.00544029186831373
+          ],
+          "size": [
+            0.022500000000000006,
+            0.03129210154169312,
+            0.016119416963727116
+          ],
+          "range_x": [
+            0.075,
+            0.0975
+          ]
+        },
+        {
+          "type": "box",
+          "center": [
+            0.10397340536117554,
+            -0.00712144304998219,
+            0.004717300646007061
+          ],
+          "size": [
+            0.012946810722351071,
+            0.023757112678140402,
+            0.017565399408340454
+          ],
+          "purpose": "Small upper connector beyond x=0.0975 outside the circular foot; optional for first contact-only proxy."
+        }
+      ]
+    }
+  },
+  "source_zero_pose_feet": {
+    "kneel": {
+      "position_source": [
+        0.12413867209569279,
+        0.1309900387911283,
+        -0.108000227937339
+      ],
+      "cylinder_axis_source": [
+        0.9999999999503592,
+        6.1017530912817544e-06,
+        -7.87721024336969e-06
+      ],
+      "cylinder_min_z_source": -0.12050030896903427,
+      "knee_mesh_min_z_source": -0.12050020875686848,
+      "geometric_quadrant": "front_right"
+    },
+    "kneel_1": {
+      "position_source": [
+        0.12038772402707497,
+        -0.11723405230106976,
+        -0.13001667888983798
+      ],
+      "cylinder_axis_source": [
+        0.999999999947788,
+        5.7295524751963006e-06,
+        -8.461451772719014e-06
+      ],
+      "cylinder_min_z_source": -0.14251676593150844,
+      "knee_mesh_min_z_source": -0.14251666078388092,
+      "geometric_quadrant": "rear_right"
+    },
+    "kneer": {
+      "position_source": [
+        -0.11346577864816876,
+        -0.19681886890128725,
+        -0.12690364383450087
+      ],
+      "cylinder_axis_source": [
+        0.9989001318435713,
+        -1.6310558840460966e-06,
+        0.04688844847332263
+      ],
+      "cylinder_min_z_source": -0.1398722322786949,
+      "knee_mesh_min_z_source": -0.13986960532906395,
+      "geometric_quadrant": "rear_left"
+    },
+    "kneer_1": {
+      "position_source": [
+        -0.12383841295471393,
+        0.10201615714119709,
+        -0.1279871087151583
+      ],
+      "cylinder_axis_source": [
+        0.9999999999722281,
+        -3.977269123234179e-06,
+        -6.302784098860537e-06
+      ],
+      "cylinder_min_z_source": -0.14048717355102186,
+      "knee_mesh_min_z_source": -0.1404863864620033,
+      "geometric_quadrant": "front_left"
+    }
+  }
+}

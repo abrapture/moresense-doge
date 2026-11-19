@@ -1,0 +1,138 @@
+{
+  "passed": false,
+  "errors": [
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\Front\\0022.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\Front\\0093.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\Front\\0100.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\Front\\0211.stl",
+    "Bounding-box discrepancy Front.stl: 0.000801893m",
+    "Bounding-box discrepancy KneeL.stl: 0.000562623m",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\KneeR\\0065.stl",
+    "Bounding-box discrepancy KneeR.stl: 0.000562623m",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\Part_14\\0060.stl",
+    "Bounding-box discrepancy Part_14.stl: 0.000801893m",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\Part_14B\\0118.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\Part_15\\0043.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\Part_15\\0393.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\Part_15\\0412.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\Part_15\\0456.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\Part_15\\0459.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\Part_20\\0170.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\fm\\0116.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\fm\\0177.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\fm\\0224.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\fm\\0354.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\fm\\0397.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\fm\\0414.stl",
+    "Invalid convex mesh outputs\\moresense_doge\\meshes\\coacd_05mm\\fm\\0446.stl"
+  ],
+  "collision_instances": 7810,
+  "distinct_sources": 20,
+  "parts": {
+    "Front.stl": {
+      "count": 342,
+      "bbox_max_error_m": 0.000801892951130867,
+      "source_watertight": true
+    },
+    "HipL.stl": {
+      "count": 157,
+      "bbox_max_error_m": 9.313225746154785e-10,
+      "source_watertight": true
+    },
+    "HipR.stl": {
+      "count": 161,
+      "bbox_max_error_m": 9.313225746154785e-10,
+      "source_watertight": true
+    },
+    "KneeL.stl": {
+      "count": 158,
+      "bbox_max_error_m": 0.000562623143196106,
+      "source_watertight": true
+    },
+    "KneeR.stl": {
+      "count": 140,
+      "bbox_max_error_m": 0.000562623143196106,
+      "source_watertight": true
+    },
+    "Motor_upper_Cover.stl": {
+      "count": 84,
+      "bbox_max_error_m": 0.00024870969355106354,
+      "source_watertight": true
+    },
+    "Part_1.stl": {
+      "count": 1,
+      "bbox_max_error_m": 0.0,
+      "source_watertight": true
+    },
+    "Part_14.stl": {
+      "count": 365,
+      "bbox_max_error_m": 0.000801892951130867,
+      "source_watertight": true
+    },
+    "Part_14B.stl": {
+      "count": 250,
+      "bbox_max_error_m": 3.5762786865234375e-07,
+      "source_watertight": true
+    },
+    "Part_15.stl": {
+      "count": 670,
+      "bbox_max_error_m": 1.1175870895385742e-07,
+      "source_watertight": true
+    },
+    "Part_16.stl": {
+      "count": 66,
+      "bbox_max_error_m": 0.0,
+      "source_watertight": true
+    },
+    "Part_18.stl": {
+      "count": 203,
+      "bbox_max_error_m": 1.862645149230957e-09,
+      "source_watertight": true
+    },
+    "Part_20.stl": {
+      "count": 241,
+      "bbox_max_error_m": 2.0116567611694336e-06,
+      "source_watertight": true
+    },
+    "ShoulderR.stl": {
+      "count": 122,
+      "bbox_max_error_m": 3.1478703022003174e-07,
+      "source_watertight": true
+    },
+    "Sl.stl": {
+      "count": 123,
+      "bbox_max_error_m": 2.905726432800293e-07,
+      "source_watertight": true
+    },
+    "fm.stl": {
+      "count": 506,
+      "bbox_max_error_m": 1.601874828338623e-07,
+      "source_watertight": true
+    },
+    "motor_body.stl": {
+      "count": 47,
+      "bbox_max_error_m": 2.239830791950226e-06,
+      "source_watertight": true
+    },
+    "motor_bottom_cover.stl": {
+      "count": 50,
+      "bbox_max_error_m": 0.00024750037118792534,
+      "source_watertight": true
+    },
+    "roll1.stl": {
+      "count": 33,
+      "bbox_max_error_m": 1.9185245037078857e-07,
+      "source_watertight": true
+    },
+    "roll2.stl": {
+      "count": 73,
+      "bbox_max_error_m": 1.5087425708770752e-07,
+      "source_watertight": true
+    }
+  },
+  "limits": [
+    "Bounding box agreement and convexity do not prove accuracy of cavities or contact behavior.",
+    "Self-collision filtering and dynamic engine behavior are not covered.",
+    "CoACD threshold is an algorithm parameter, not a certified 0.5 mm maximum surface error."
+  ]
+}

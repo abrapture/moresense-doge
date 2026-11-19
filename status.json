@@ -1,0 +1,233 @@
+{
+  "status": "IMPORT_READY_CALIBRATION_PENDING",
+  "urdf_file": "urdf/moresense_doge_simple.urdf",
+  "mass_parameters_complete": true,
+  "joint_limits_complete": false,
+  "parameter_notes": "User: battery245g; middle shells51g each; endcaps24g each; lower frames23g each; mounts10-20g assigned15g each. FEETECH ST3215-C01812V reference55g per servo. Measured one lower-leg assembly (hip+knee plus2motors)149g is applied symmetrically to all4legs; two55g servos leave39g for lower printed parts+fasteners, distributed by CAD volumes. Shoulder printed mass estimated from prior wholeprintedleg35g by CADvolume ratio (~10.83g). Addeduserpayload65g:Pi4 50g in central bay; ESP32IMUwires15g distributed over tray. Omitted additional fasteners remain unmeasured. 0.980665Nm is datasheet rated torque,2.941995Nm stall kept separately; speed4.717rad/s is no-load at12V. Only shoulder angle limits are known; hip/knee remain continuous pending clearance calibration.",
+  "training_validation_complete": false,
+  "cad_zero_and_neutral_pose_confirmed": false,
+  "mass_kg": 1.3953094195474978,
+  "current_xml_mass_kg": 1.3953094195474978,
+  "missing_mass_links": [],
+  "source_mass_kg": 0.00100286252,
+  "links": 13,
+  "moving_joints": 12,
+  "collisions": 37,
+  "added_payload_mass_kg": 0.065,
+  "added_payloads": [
+    {
+      "name": "raspberry_pi_4_surrogate",
+      "mass_kg": 0.05,
+      "merged_link": "base_link",
+      "center_in_merged_link_m": [
+        -0.00012950118880585004,
+        0.046774999800300546,
+        0.04200519999999999
+      ],
+      "size_m": [
+        0.085,
+        0.056,
+        0.016
+      ],
+      "visual": true,
+      "notes": "User50g; uniform85x56x16mm mass surrogate, centered on central Pi mounting pattern49x58mm of Part18. PCB85mm axis along rawmeshY; boxbottom at mountingseatZ. 16mm envelope and uniformCoM approximate components. No collider: internal payload contained in torso."
+    },
+    {
+      "name": "esp32_imu_wiring_equivalent",
+      "mass_kg": 0.015,
+      "merged_link": "base_link",
+      "center_in_merged_link_m": [
+        -0.00012947460159323798,
+        0.04777499876299975,
+        0.036505199999999995
+      ],
+      "size_m": [
+        0.14784934371709824,
+        0.08699999749660492,
+        0.005
+      ],
+      "visual": false,
+      "notes": "User15gcombinedESP32IMUwires; uniform5mmthick mass distribution across electronics tray footprint. Actual layout unknown, position and inertia are an approximation. No extra geometry or collider."
+    }
+  ],
+  "retained_joints": {
+    "revolute_1": "leg_1_shoulder_joint",
+    "revolute_1_8": "leg_1_hip_joint",
+    "revolute_2_10": "leg_1_knee_joint",
+    "revolute_1_11": "leg_2_shoulder_joint",
+    "revolute_1_9": "leg_2_hip_joint",
+    "revolute_2_4": "leg_2_knee_joint",
+    "revolute_1_7": "leg_3_shoulder_joint",
+    "revolute_2_6": "leg_3_hip_joint",
+    "revolute_2_5": "leg_3_knee_joint",
+    "revolute_1_3": "leg_4_shoulder_joint",
+    "revolute_2_2": "leg_4_hip_joint",
+    "revolute_2_1": "leg_4_knee_joint"
+  },
+  "removed_independent_terminal_joints": [
+    "revolute_1_1",
+    "revolute_1_10",
+    "revolute_1_2",
+    "revolute_1_4",
+    "revolute_1_5",
+    "revolute_1_6",
+    "revolute_2",
+    "revolute_2_11",
+    "revolute_2_3",
+    "revolute_2_7",
+    "revolute_2_8",
+    "revolute_2_9"
+  ],
+  "support_disc_couplings": {
+    "revolute_1_1": {
+      "active_source_joint": "revolute_2_1",
+      "multiplier": -1,
+      "terminal_disc": "roll1_9",
+      "rigid_with": "roll2_9",
+      "assumption": "Opposite support disc follows the same U-bracket as the structural output horn."
+    },
+    "revolute_1_10": {
+      "active_source_joint": "revolute_2_10",
+      "multiplier": -1,
+      "terminal_disc": "roll1_2",
+      "rigid_with": "roll2_2",
+      "assumption": "Opposite support disc follows the same U-bracket as the structural output horn."
+    },
+    "revolute_1_2": {
+      "active_source_joint": "revolute_2_2",
+      "multiplier": -1,
+      "terminal_disc": "roll1_11",
+      "rigid_with": "roll2_11",
+      "assumption": "Opposite support disc follows the same U-bracket as the structural output horn."
+    },
+    "revolute_1_4": {
+      "active_source_joint": "revolute_2_4",
+      "multiplier": -1,
+      "terminal_disc": "roll1_1",
+      "rigid_with": "roll2_1",
+      "assumption": "Opposite support disc follows the same U-bracket as the structural output horn."
+    },
+    "revolute_1_5": {
+      "active_source_joint": "revolute_2_5",
+      "multiplier": -1,
+      "terminal_disc": "roll1_8",
+      "rigid_with": "roll2_8",
+      "assumption": "Opposite support disc follows the same U-bracket as the structural output horn."
+    },
+    "revolute_1_6": {
+      "active_source_joint": "revolute_2_6",
+      "multiplier": -1,
+      "terminal_disc": "roll1_6",
+      "rigid_with": "roll2_6",
+      "assumption": "Opposite support disc follows the same U-bracket as the structural output horn."
+    },
+    "revolute_2": {
+      "active_source_joint": "revolute_1",
+      "multiplier": -1,
+      "terminal_disc": "roll2_3",
+      "rigid_with": "roll1_3",
+      "assumption": "Opposite support disc follows the same U-bracket as the structural output horn."
+    },
+    "revolute_2_11": {
+      "active_source_joint": "revolute_1_11",
+      "multiplier": -1,
+      "terminal_disc": "roll2_5",
+      "rigid_with": "roll1_5",
+      "assumption": "Opposite support disc follows the same U-bracket as the structural output horn."
+    },
+    "revolute_2_3": {
+      "active_source_joint": "revolute_1_3",
+      "multiplier": -1,
+      "terminal_disc": "roll2_10",
+      "rigid_with": "roll1_10",
+      "assumption": "Opposite support disc follows the same U-bracket as the structural output horn."
+    },
+    "revolute_2_7": {
+      "active_source_joint": "revolute_1_7",
+      "multiplier": -1,
+      "terminal_disc": "roll2_7",
+      "rigid_with": "roll1_7",
+      "assumption": "Opposite support disc follows the same U-bracket as the structural output horn."
+    },
+    "revolute_2_8": {
+      "active_source_joint": "revolute_1_8",
+      "multiplier": -1,
+      "terminal_disc": "roll2_4",
+      "rigid_with": "roll1_4",
+      "assumption": "Opposite support disc follows the same U-bracket as the structural output horn."
+    },
+    "revolute_2_9": {
+      "active_source_joint": "revolute_1_9",
+      "multiplier": -1,
+      "terminal_disc": "roll2",
+      "rigid_with": "roll1",
+      "assumption": "Opposite support disc follows the same U-bracket as the structural output horn."
+    }
+  },
+  "chains": {
+    "leg_1": [
+      "revolute_1",
+      "revolute_1_8",
+      "revolute_2_10"
+    ],
+    "leg_2": [
+      "revolute_1_11",
+      "revolute_1_9",
+      "revolute_2_4"
+    ],
+    "leg_3": [
+      "revolute_1_7",
+      "revolute_2_6",
+      "revolute_2_5"
+    ],
+    "leg_4": [
+      "revolute_1_3",
+      "revolute_2_2",
+      "revolute_2_1"
+    ]
+  },
+  "root_frame": "Original CAD root; +Z up. No front/left assumption.",
+  "self_collision": false,
+  "simulation_validation_performed": true,
+  "validation": {
+    "structure_FK_max_matrix_error_12_poses": 7.799164092325839E-12,
+    "all_FK_max_matrix_error_12_poses": 4.666872835946781E-06,
+    "support_disc_max_translation_error_m": 1.1740630772186752E-06,
+    "support_disc_max_rotation_matrix_error": 4.666872835946781E-06,
+    "support_disc_error_reason": "Original opposite shaft axes have CAD export rounding; exact rigid coupling removes this inconsistency.",
+    "original_visuals_preserved": 117,
+    "added_visuals": 1,
+    "mass_sum_preserved": true,
+    "center_of_mass_preserved": true,
+    "full_inertia_preserved": true,
+    "positive_definite_inertias": true
+  },
+  "notes": [
+    "Collision proxies approximate CAD surfaces; check contacts and swept clearance in Isaac.",
+    "All original joints were continuous with no actuator or angular limits.",
+    "CAD zero is asymmetric and is not a calibrated neutral standing pose.",
+    "Support discs are rigidly attached to the matching structural output bracket; confirm attachment on hardware.",
+    "Servo total mass distribution by CAD volume is an explicit approximation when used.",
+    "Self collision must stay disabled until proxy clearances have been checked."
+  ],
+  "simulation_validation_scope": "BNO08x observation integration only: Newton/MuJoCo Warp, 8 freely falling/rotating robots, 100 physics steps at 0.005s, episode auto-reset. No locomotion, contact or actuator validation.",
+  "imu_observations": {
+    "model": "BNO08x gyro and fused-gravity output approximation",
+    "config_file": "training/bno08x_config.json",
+    "actor_channels": 6,
+    "sample_rate_hz": 100.0,
+    "delivery_delay_s": 0.01,
+    "noise_parameters_measured_on_hardware": false,
+    "body_axes_aligned": true,
+    "unit_tests_passed": 14,
+    "physics_integration_report": "verification/bno08x_isaac_check.json",
+    "test_environment": "training.imu_check_env.MoresenseImuCheckEnv",
+    "locomotion_task_created": false,
+    "physical_imu_mass_already_in_electronics_payload": true,
+    "urdf_sha256": "cf17798f392a20b1407c0c16e9551c6b20dc4af298f6401921b4a9a460b5432b"
+  },
+  "collision_description": "User-directed approximations: 33 boxes, 4 cylinders, 12 motor boxes, two boxes per hip and knee, 3 separated body boxes, 2 upper cover straps; moving shoulder plastic omitted.",
+  "simple_collision_physics_validated": false,
+  "simple_collision_import_and_free_motion_validated": true,
+  "simple_collision_validation_scope": "Newton MJWarp, 1 environment, 100 free-fall steps, no ground or self-contact; see verification/simple_collision_imu_check.json"
+}
