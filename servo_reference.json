@@ -1,0 +1,27 @@
+{
+  "reference_only_until_hardware_variant_and_supply_are_confirmed": false,
+  "model": "FEETECH ST-3215-C018",
+  "manufacturer_document_revision": "A/0, 2023-07-20",
+  "manufacturer_document": "https://www.feetechrc.com/Data/feetechrc/upload/file/20240507/6385067068652648096680943.pdf",
+  "accessible_manufacturer_document_mirror": "https://cdn.robotshop.com/media/F/Fit/RB-Fit-155/pdf/feetech_12v_30kg_cm_magnetic_encoding_servo_sts321_specification_pdf.pdf",
+  "mass_g": 55,
+  "mass_tolerance_g": 1,
+  "specification_test_voltage_v": 12,
+  "rated_torque_nm": 0.980665,
+  "stall_torque_nm": 2.941995,
+  "no_load_speed_rad_s": 4.71710608647,
+  "speed_test_seconds_per_60_deg": 0.222,
+  "gear_ratio": 345,
+  "encoder_counts_per_revolution": 4096,
+  "servo_mechanical_hard_stop": false,
+  "assembled_leg_clearance_limits_known": false,
+  "notes": [
+    "Stall torque is a brief limit and is not the continuous torque available during walking.",
+    "Rated torque and no-load speed are different operating points, not simultaneously achievable values.",
+    "Servo has no hard stop, but the assembled robot still requires limits against collisions and cable winding.",
+    "12V reference values do not establish performance at a different supply voltage.",
+    "Mass distribution among servo CAD pieces is approximate; measured whole-servo mass is preferable."
+  ],
+  "user_confirmed_variant": "12V",
+  "user_requested_reference_mass": true
+}

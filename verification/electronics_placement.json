@@ -1,0 +1,130 @@
+{
+  "source_mesh": "Part_18.stl",
+  "mesh_to_CAD_root_transform": [
+    [
+      -0.9999999999683131,
+      -7.960769379983448e-06,
+      4.2579599998650785e-109,
+      -0.00012989743610174187
+    ],
+    [
+      7.960769379983448e-06,
+      -0.9999999999683131,
+      -3.389663758919432e-114,
+      -0.0030000001981222435
+    ],
+    [
+      4.25796e-109,
+      4.4383271855999996e-200,
+      1.0,
+      0.015367199999999996
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "tray_mesh_bounds_m": {
+    "min": [
+      -0.07392469048500061,
+      -0.09427499771118164,
+      0.013937998563051224
+    ],
+    "max": [
+      0.07392465323209763,
+      -0.007275000214576721,
+      0.020438004285097122
+    ]
+  },
+  "observed_mount_hole_centers_mesh_xy_m": [
+    [
+      -0.0245,
+      -0.010775
+    ],
+    [
+      0.0245,
+      -0.010775
+    ],
+    [
+      -0.0245,
+      -0.068775
+    ],
+    [
+      0.0245,
+      -0.068775
+    ]
+  ],
+  "mount_seat_mesh_z_m": 0.018638,
+  "front_retaining_clip_top_mesh_z_m": 0.020238,
+  "raspberry_pi4": {
+    "mass_kg": 0.05,
+    "mesh_center_m": [
+      0.0,
+      -0.049775,
+      0.026638
+    ],
+    "CAD_root_center_m": [
+      -0.0001295011888058532,
+      0.04677499980030054,
+      0.04200519999999999
+    ],
+    "box_size_m": [
+      0.085,
+      0.056,
+      0.016
+    ],
+    "mesh_rpy_rad": [
+      0,
+      0,
+      1.5707963267948966
+    ],
+    "PCB_footprint_mesh_bounds_xy_m": {
+      "min": [
+        -0.028,
+        -0.092275
+      ],
+      "max": [
+        0.028,
+        -0.007275
+      ]
+    },
+    "bottom_CAD_root_z_m": 0.03400519999999999,
+    "top_CAD_root_z_m": 0.0500052,
+    "visual": true,
+    "collision": false
+  },
+  "esp32_imu_wires": {
+    "mass_kg": 0.015,
+    "distribution": "Uniform mass envelope over full electronics tray; actual component layout unknown.",
+    "mesh_center_m": [
+      -1.862645149230957e-08,
+      -0.05077499896287918,
+      0.021137999999999997
+    ],
+    "CAD_root_center_m": [
+      -0.00012947460159323776,
+      0.04777499876299975,
+      0.036505199999999995
+    ],
+    "box_size_m": [
+      0.14784934371709824,
+      0.08699999749660492,
+      0.005
+    ],
+    "mesh_rpy_rad": [
+      0,
+      0,
+      0
+    ],
+    "visual": false,
+    "collision": false
+  },
+  "assumptions": [
+    "Pi 85x56mm footprint and 16mm overall height are representative surrogate dimensions, not a detailed board/connector model.",
+    "16mm surrogate height starts at mounting seat; front clips intentionally flank PCB retaining locations.",
+    "All added electronics are fixed to the base and have no collision geometry.",
+    "User provided 50g Pi and 15g additional electronics/wires masses; distribution and component height remain approximate."
+  ]
+}

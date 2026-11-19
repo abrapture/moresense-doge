@@ -1,0 +1,145 @@
+{
+  "battery_mass_g": 245,
+  "servo_total_mass_g": 55,
+  "servo_effort_nm": 0.980665,
+  "servo_velocity_rad_s": 4.71710608647116,
+  "effective_print_density_kg_m3": null,
+  "mass_g_by_mesh": {
+    "fm.stl": 51,
+    "Part_15.stl": 51,
+    "Front.stl": 24,
+    "Part_14.stl": 24,
+    "Part_16.stl": 15,
+    "Part_18.stl": 15,
+    "Part_14B.stl": 23,
+    "Part_20.stl": 23
+  },
+  "mass_g_by_link": {
+    "shoulderr_1": 10.827326064271567,
+    "shoulderr": 10.827326064271567,
+    "sl": 10.827383709477338,
+    "sl_1": 10.827383709477338
+  },
+  "joint_limits": {
+    "leg_1_shoulder_joint": {
+      "lower_rad": -0.5235987755982988,
+      "upper_rad": 0.5235987755982988,
+      "effort_nm": 0.980665,
+      "velocity_rad_s": 4.71710608647116,
+      "horizontal_q_rad": 0.0,
+      "basis": "User +/-30deg from horizontal; horizontal estimated from shoulder-to-hip joint centers in CAD."
+    },
+    "leg_2_shoulder_joint": {
+      "lower_rad": -0.5705070638995379,
+      "upper_rad": 0.47669048729705976,
+      "effort_nm": 0.980665,
+      "velocity_rad_s": 4.71710608647116,
+      "horizontal_q_rad": -0.046908288301239054,
+      "basis": "User +/-30deg from horizontal; horizontal estimated from shoulder-to-hip joint centers in CAD."
+    },
+    "leg_3_shoulder_joint": {
+      "lower_rad": -0.5235987755982988,
+      "upper_rad": 0.5235987755982988,
+      "effort_nm": 0.980665,
+      "velocity_rad_s": 4.71710608647116,
+      "horizontal_q_rad": 0.0,
+      "basis": "User +/-30deg from horizontal; horizontal estimated from shoulder-to-hip joint centers in CAD."
+    },
+    "leg_4_shoulder_joint": {
+      "lower_rad": -0.5235987755982988,
+      "upper_rad": 0.5235987755982988,
+      "effort_nm": 0.980665,
+      "velocity_rad_s": 4.71710608647116,
+      "horizontal_q_rad": 0.0,
+      "basis": "User +/-30deg from horizontal; horizontal estimated from shoulder-to-hip joint centers in CAD."
+    }
+  },
+  "cad_zero_and_neutral_pose_confirmed": false,
+  "notes": "User: battery245g; middle shells51g each; endcaps24g each; lower frames23g each; mounts10-20g assigned15g each. FEETECH ST3215-C01812V reference55g per servo. Measured one lower-leg assembly (hip+knee plus2motors)149g is applied symmetrically to all4legs; two55g servos leave39g for lower printed parts+fasteners, distributed by CAD volumes. Shoulder printed mass estimated from prior wholeprintedleg35g by CADvolume ratio (~10.83g). Addeduserpayload65g:Pi4 50g in central bay; ESP32IMUwires15g distributed over tray. Omitted additional fasteners remain unmeasured. 0.980665Nm is datasheet rated torque,2.941995Nm stall kept separately; speed4.717rad/s is no-load at12V. Only shoulder angle limits are known; hip/knee remain continuous pending clearance calibration.",
+  "mass_groups": [
+    {
+      "label": "user_lower_leg_149g_minus_two_55g_servos_leg_1",
+      "total_mass_g": 39,
+      "links": [
+        "hipr_1",
+        "kneer_1"
+      ]
+    },
+    {
+      "label": "user_lower_leg_149g_minus_two_55g_servos_leg_2",
+      "total_mass_g": 39,
+      "links": [
+        "hipr",
+        "kneer"
+      ]
+    },
+    {
+      "label": "user_lower_leg_149g_minus_two_55g_servos_leg_3",
+      "total_mass_g": 39,
+      "links": [
+        "hipl",
+        "kneel"
+      ]
+    },
+    {
+      "label": "user_lower_leg_149g_minus_two_55g_servos_leg_4",
+      "total_mass_g": 39,
+      "links": [
+        "hipl_1",
+        "kneel_1"
+      ]
+    }
+  ],
+  "added_payloads": [
+    {
+      "name": "raspberry_pi_4_surrogate",
+      "mass_g": 50,
+      "reference_source_link": "part_18",
+      "center_in_source_visual_m": [
+        0,
+        -0.049775,
+        0.026638
+      ],
+      "rpy_in_source_visual_rad": [
+        0,
+        0,
+        1.5707963267948966
+      ],
+      "size_m": [
+        0.085,
+        0.056,
+        0.016
+      ],
+      "visual": true,
+      "rgba": [
+        0.035,
+        0.42,
+        0.17,
+        1
+      ],
+      "notes": "User50g; uniform85x56x16mm mass surrogate, centered on central Pi mounting pattern49x58mm of Part18. PCB85mm axis along rawmeshY; boxbottom at mountingseatZ. 16mm envelope and uniformCoM approximate components. No collider: internal payload contained in torso."
+    },
+    {
+      "name": "esp32_imu_wiring_equivalent",
+      "mass_g": 15,
+      "reference_source_link": "part_18",
+      "center_in_source_visual_m": [
+        -1.862645149230957e-08,
+        -0.05077499896287918,
+        0.021137999999999997
+      ],
+      "rpy_in_source_visual_rad": [
+        0,
+        0,
+        0
+      ],
+      "size_m": [
+        0.14784934371709824,
+        0.08699999749660492,
+        0.005
+      ],
+      "visual": false,
+      "notes": "User15gcombinedESP32IMUwires; uniform5mmthick mass distribution across electronics tray footprint. Actual layout unknown, position and inertia are an approximation. No extra geometry or collider."
+    }
+  ]
+}

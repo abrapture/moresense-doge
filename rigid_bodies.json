@@ -1,0 +1,344 @@
+[
+  {
+    "link": "base_link",
+    "mass_kg": 0.7491622053446154,
+    "com": [
+      -0.0001313126445813181,
+      0.0028452465427974195,
+      0.017782467227161602
+    ],
+    "inertia_eigenvalues": [
+      0.0015243499395406548,
+      0.005366933795924153,
+      0.006505671947806237
+    ],
+    "members": [
+      "fm",
+      "front",
+      "gearing_10",
+      "gearing_3",
+      "gearing_5",
+      "gearing_7",
+      "motor_1723_3_10",
+      "motor_1723_3_3",
+      "motor_1723_3_5",
+      "motor_1723_3_7",
+      "motor_body_10",
+      "motor_body_3",
+      "motor_body_5",
+      "motor_body_7",
+      "motor_bottom_cover_10",
+      "motor_bottom_cover_3",
+      "motor_bottom_cover_5",
+      "motor_bottom_cover_7",
+      "motor_upper_cover_10",
+      "motor_upper_cover_3",
+      "motor_upper_cover_5",
+      "motor_upper_cover_7",
+      "part_1",
+      "part_14",
+      "part_14b",
+      "part_15",
+      "part_16",
+      "part_18",
+      "part_20",
+      "pcb_10",
+      "pcb_3",
+      "pcb_5",
+      "pcb_7",
+      "root"
+    ],
+    "added_payloads": [
+      "raspberry_pi_4_surrogate",
+      "esp32_imu_wiring_equivalent"
+    ]
+  },
+  {
+    "link": "leg_2_hip_link",
+    "mass_kg": 0.07421424111375778,
+    "com": [
+      0.02652463871295036,
+      0.01828657177471256,
+      -0.0007769480334664635
+    ],
+    "inertia_eigenvalues": [
+      1.2699453127306784e-05,
+      5.8251111742933166e-05,
+      6.378866522139996e-05
+    ],
+    "members": [
+      "gearing",
+      "hipr",
+      "motor_1723_3",
+      "motor_body",
+      "motor_bottom_cover",
+      "motor_upper_cover",
+      "pcb",
+      "roll1_1",
+      "roll2_1"
+    ],
+    "added_payloads": []
+  },
+  {
+    "link": "leg_2_knee_link",
+    "mass_kg": 0.0730763102223961,
+    "com": [
+      0.02594358307922913,
+      0.0006497481954656893,
+      0.019910424886854867
+    ],
+    "inertia_eigenvalues": [
+      1.0648424853906652e-05,
+      5.249991689020884e-05,
+      5.607524313813483e-05
+    ],
+    "members": [
+      "gearing_1",
+      "kneer",
+      "motor_1723_3_1",
+      "motor_body_1",
+      "motor_bottom_cover_1",
+      "motor_upper_cover_1",
+      "pcb_1"
+    ],
+    "added_payloads": []
+  },
+  {
+    "link": "leg_4_hip_link",
+    "mass_kg": 0.07421393826798846,
+    "com": [
+      0.026522725161729446,
+      0.0005515453761473596,
+      0.0190631285562943
+    ],
+    "inertia_eigenvalues": [
+      1.2720762553121659e-05,
+      5.827268215043821e-05,
+      6.378886464349758e-05
+    ],
+    "members": [
+      "gearing_11",
+      "hipl_1",
+      "motor_1723_3_11",
+      "motor_body_11",
+      "motor_bottom_cover_11",
+      "motor_upper_cover_11",
+      "pcb_11",
+      "roll1_9",
+      "roll2_9"
+    ],
+    "added_payloads": []
+  },
+  {
+    "link": "leg_1_knee_link",
+    "mass_kg": 0.0730763102223961,
+    "com": [
+      0.025943583079228755,
+      0.0006497481954656808,
+      0.019910424886854877
+    ],
+    "inertia_eigenvalues": [
+      1.0648424853906652e-05,
+      5.249991689020882e-05,
+      5.607524313813481e-05
+    ],
+    "members": [
+      "gearing_2",
+      "kneer_1",
+      "motor_1723_3_2",
+      "motor_body_2",
+      "motor_bottom_cover_2",
+      "motor_upper_cover_2",
+      "pcb_2"
+    ],
+    "added_payloads": []
+  },
+  {
+    "link": "leg_1_hip_link",
+    "mass_kg": 0.07421424111375778,
+    "com": [
+      0.026524640755351114,
+      0.01828657177471854,
+      -0.0007769482757432348
+    ],
+    "inertia_eigenvalues": [
+      1.2699453042374115e-05,
+      5.8251133994096263e-05,
+      6.378868754746755e-05
+    ],
+    "members": [
+      "gearing_4",
+      "hipr_1",
+      "motor_1723_3_4",
+      "motor_body_4",
+      "motor_bottom_cover_4",
+      "motor_upper_cover_4",
+      "pcb_4",
+      "roll1_2",
+      "roll2_2"
+    ],
+    "added_payloads": []
+  },
+  {
+    "link": "leg_3_hip_link",
+    "mass_kg": 0.07421393826798846,
+    "com": [
+      0.026522729358996522,
+      0.0005515439797968794,
+      0.019063128556288302
+    ],
+    "inertia_eigenvalues": [
+      1.2720763145599269e-05,
+      5.8272728041660874e-05,
+      6.378890993779919e-05
+    ],
+    "members": [
+      "gearing_6",
+      "hipl",
+      "motor_1723_3_6",
+      "motor_body_6",
+      "motor_bottom_cover_6",
+      "motor_upper_cover_6",
+      "pcb_6",
+      "roll1_8",
+      "roll2_8"
+    ],
+    "added_payloads": []
+  },
+  {
+    "link": "leg_3_knee_link",
+    "mass_kg": 0.0730766130681654,
+    "com": [
+      0.025943579594427172,
+      -0.0008785610189383059,
+      0.01991032488151627
+    ],
+    "inertia_eigenvalues": [
+      1.0623672254738486e-05,
+      5.247502499950382e-05,
+      5.607366364487481e-05
+    ],
+    "members": [
+      "gearing_8",
+      "kneel",
+      "motor_1723_3_8",
+      "motor_body_8",
+      "motor_bottom_cover_8",
+      "motor_upper_cover_8",
+      "pcb_8"
+    ],
+    "added_payloads": []
+  },
+  {
+    "link": "leg_4_knee_link",
+    "mass_kg": 0.0730766130681654,
+    "com": [
+      0.025943579594427196,
+      -0.0008785610189382132,
+      0.019910324881516256
+    ],
+    "inertia_eigenvalues": [
+      1.062367225473849e-05,
+      5.247502499950381e-05,
+      5.607366364487486e-05
+    ],
+    "members": [
+      "gearing_9",
+      "kneel_1",
+      "motor_1723_3_9",
+      "motor_body_9",
+      "motor_bottom_cover_9",
+      "motor_upper_cover_9",
+      "pcb_9"
+    ],
+    "added_payloads": []
+  },
+  {
+    "link": "leg_2_shoulder_link",
+    "mass_kg": 0.014246223391963828,
+    "com": [
+      0.02210041734373956,
+      -0.0188634466473094,
+      0.002652014686230615
+    ],
+    "inertia_eigenvalues": [
+      3.79608610987774e-06,
+      7.213276189354833e-06,
+      8.781200403066134e-06
+    ],
+    "members": [
+      "roll1",
+      "roll1_5",
+      "roll2",
+      "roll2_5",
+      "shoulderr"
+    ],
+    "added_payloads": []
+  },
+  {
+    "link": "leg_4_shoulder_link",
+    "mass_kg": 0.0142462810371696,
+    "com": [
+      -0.00471250464598379,
+      -0.019083342769228226,
+      -0.02179069170808022
+    ],
+    "inertia_eigenvalues": [
+      3.7963579335030583e-06,
+      7.229453818068326e-06,
+      8.794664694343855e-06
+    ],
+    "members": [
+      "roll1_10",
+      "roll1_11",
+      "roll2_10",
+      "roll2_11",
+      "sl_1"
+    ],
+    "added_payloads": []
+  },
+  {
+    "link": "leg_1_shoulder_link",
+    "mass_kg": 0.014246223391963828,
+    "com": [
+      0.022100432177684884,
+      -0.018863500954647706,
+      0.0026520499097666583
+    ],
+    "inertia_eigenvalues": [
+      3.796082688856828e-06,
+      7.213264004572346e-06,
+      8.781191110439876e-06
+    ],
+    "members": [
+      "roll1_3",
+      "roll1_4",
+      "roll2_3",
+      "roll2_4",
+      "shoulderr_1"
+    ],
+    "added_payloads": []
+  },
+  {
+    "link": "leg_3_shoulder_link",
+    "mass_kg": 0.0142462810371696,
+    "com": [
+      -0.004712485333235089,
+      -0.01908333070931735,
+      -0.021790692614590948
+    ],
+    "inertia_eigenvalues": [
+      3.7963637539050207e-06,
+      7.22945612460417e-06,
+      8.794660805534065e-06
+    ],
+    "members": [
+      "roll1_6",
+      "roll1_7",
+      "roll2_6",
+      "roll2_7",
+      "sl"
+    ],
+    "added_payloads": []
+  }
+]

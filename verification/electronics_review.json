@@ -1,0 +1,100 @@
+{
+  "material_bugs": [],
+  "total_mass_before_kg": 1.3303094195482001,
+  "total_mass_after_kg": 1.3953094195482,
+  "delta_mass_kg": 0.06499999999999995,
+  "base_only_inertia_change": true,
+  "independent_cuboid_rotation_and_parallel_axis_max_errors": {
+    "mass_kg": 0.0,
+    "center_of_mass_m": 7.856909567394155e-14,
+    "inertia_kg_m2": 3.552930519234998e-15
+  },
+  "payloads": [
+    {
+      "name": "raspberry_pi_4_surrogate",
+      "mass_kg": 0.05,
+      "center_in_base_m": [
+        -0.0001295011888058532,
+        0.04677499980030054,
+        0.04200519999999999
+      ],
+      "uniform_cuboid_inertia_at_com_in_payload_axes_kg_m2": [
+        [
+          1.4133333333333336e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          3.1170833333333337e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          4.3170833333333344e-05
+        ]
+      ],
+      "visual": true,
+      "collision": false
+    },
+    {
+      "name": "esp32_imu_wiring_equivalent",
+      "mass_kg": 0.015,
+      "center_in_base_m": [
+        -0.00012947460159323776,
+        0.04777499876299975,
+        0.036505199999999995
+      ],
+      "uniform_cuboid_inertia_at_com_in_payload_axes_kg_m2": [
+        [
+          9.492499455511578e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.7355535546970823e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          3.67855350024824e-05
+        ]
+      ],
+      "visual": false,
+      "collision": false
+    }
+  ],
+  "body_count": 13,
+  "joint_count": 12,
+  "all_joint_xml_unchanged": true,
+  "collision_count": 64,
+  "all_collision_xml_unchanged": true,
+  "all_original_117_visuals_unchanged": true,
+  "new_visual_boxes": 1,
+  "visual_count": 118,
+  "base_inertia_positive_definite_and_triangle_valid": true,
+  "placement": {
+    "pi_mesh_footprint_xy_bounds_m": [
+      [
+        -0.028,
+        0.028
+      ],
+      [
+        -0.092275,
+        -0.007275
+      ]
+    ],
+    "pi_bottom_at_mount_seat_mesh_z_m": 0.018638,
+    "pi_box_top_in_base_z_m": 0.05000519999999999,
+    "esp_surrogate_bottom_at_mount_seat_mesh_z_m": 0.018638,
+    "assumptions": [
+      "Pi uniform cuboid shape and 16mm component height approximate hardware.",
+      "ESP32/IMU/wires uniformly distributed over tray; actual layout unknown.",
+      "Tray and mounting pattern guide placement; assembly fit is not hardware verified.",
+      "Internal payloads intentionally have no additional collision shape."
+    ]
+  }
+}

@@ -1,0 +1,978 @@
+[
+  {
+    "source_link": "fm",
+    "mesh": "fm.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 3.99078e-05,
+    "mass_kg": 0.051,
+    "policy": "configured_mesh_mass"
+  },
+  {
+    "source_link": "front",
+    "mesh": "Front.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 2.13433e-05,
+    "mass_kg": 0.024,
+    "policy": "configured_mesh_mass"
+  },
+  {
+    "source_link": "gearing",
+    "mesh": "gearing.stl",
+    "merged_link": "leg_2_hip_link",
+    "source_mass_kg": 8.26707e-07,
+    "mass_kg": 0.0010678025449174394,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "gearing_1",
+    "mesh": "gearing.stl",
+    "merged_link": "leg_2_knee_link",
+    "source_mass_kg": 8.26707e-07,
+    "mass_kg": 0.0010678025449174394,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "gearing_10",
+    "mesh": "gearing.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 8.26707e-07,
+    "mass_kg": 0.0010678025449174394,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "gearing_11",
+    "mesh": "gearing.stl",
+    "merged_link": "leg_4_hip_link",
+    "source_mass_kg": 8.26707e-07,
+    "mass_kg": 0.0010678025449174394,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "gearing_2",
+    "mesh": "gearing.stl",
+    "merged_link": "leg_1_knee_link",
+    "source_mass_kg": 8.26707e-07,
+    "mass_kg": 0.0010678025449174394,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "gearing_3",
+    "mesh": "gearing.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 8.26707e-07,
+    "mass_kg": 0.0010678025449174394,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "gearing_4",
+    "mesh": "gearing.stl",
+    "merged_link": "leg_1_hip_link",
+    "source_mass_kg": 8.26707e-07,
+    "mass_kg": 0.0010678025449174394,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "gearing_5",
+    "mesh": "gearing.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 8.26707e-07,
+    "mass_kg": 0.0010678025449174394,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "gearing_6",
+    "mesh": "gearing.stl",
+    "merged_link": "leg_3_hip_link",
+    "source_mass_kg": 8.26707e-07,
+    "mass_kg": 0.0010678025449174394,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "gearing_7",
+    "mesh": "gearing.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 8.26707e-07,
+    "mass_kg": 0.0010678025449174394,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "gearing_8",
+    "mesh": "gearing.stl",
+    "merged_link": "leg_3_knee_link",
+    "source_mass_kg": 8.26707e-07,
+    "mass_kg": 0.0010678025449174394,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "gearing_9",
+    "mesh": "gearing.stl",
+    "merged_link": "leg_4_knee_link",
+    "source_mass_kg": 8.26707e-07,
+    "mass_kg": 0.0010678025449174394,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "hipl",
+    "mesh": "HipL.stl",
+    "merged_link": "leg_3_hip_link",
+    "source_mass_kg": 1.27819e-05,
+    "mass_kg": 0.019213938267988465,
+    "policy": "group_total_distributed_by_CAD_volume_APPROXIMATION:user_lower_leg_149g_minus_two_55g_servos_leg_3"
+  },
+  {
+    "source_link": "hipl_1",
+    "mesh": "HipL.stl",
+    "merged_link": "leg_4_hip_link",
+    "source_mass_kg": 1.27819e-05,
+    "mass_kg": 0.019213938267988465,
+    "policy": "group_total_distributed_by_CAD_volume_APPROXIMATION:user_lower_leg_149g_minus_two_55g_servos_leg_4"
+  },
+  {
+    "source_link": "hipr",
+    "mesh": "HipR.stl",
+    "merged_link": "leg_2_hip_link",
+    "source_mass_kg": 1.27822e-05,
+    "mass_kg": 0.019214241113757777,
+    "policy": "group_total_distributed_by_CAD_volume_APPROXIMATION:user_lower_leg_149g_minus_two_55g_servos_leg_2"
+  },
+  {
+    "source_link": "hipr_1",
+    "mesh": "HipR.stl",
+    "merged_link": "leg_1_hip_link",
+    "source_mass_kg": 1.27822e-05,
+    "mass_kg": 0.019214241113757777,
+    "policy": "group_total_distributed_by_CAD_volume_APPROXIMATION:user_lower_leg_149g_minus_two_55g_servos_leg_1"
+  },
+  {
+    "source_link": "kneel",
+    "mesh": "KneeL.stl",
+    "merged_link": "leg_3_knee_link",
+    "source_mass_kg": 1.31625e-05,
+    "mass_kg": 0.01978606173201153,
+    "policy": "group_total_distributed_by_CAD_volume_APPROXIMATION:user_lower_leg_149g_minus_two_55g_servos_leg_3"
+  },
+  {
+    "source_link": "kneel_1",
+    "mesh": "KneeL.stl",
+    "merged_link": "leg_4_knee_link",
+    "source_mass_kg": 1.31625e-05,
+    "mass_kg": 0.01978606173201153,
+    "policy": "group_total_distributed_by_CAD_volume_APPROXIMATION:user_lower_leg_149g_minus_two_55g_servos_leg_4"
+  },
+  {
+    "source_link": "kneer",
+    "mesh": "KneeR.stl",
+    "merged_link": "leg_2_knee_link",
+    "source_mass_kg": 1.31624e-05,
+    "mass_kg": 0.019785758886242222,
+    "policy": "group_total_distributed_by_CAD_volume_APPROXIMATION:user_lower_leg_149g_minus_two_55g_servos_leg_2"
+  },
+  {
+    "source_link": "kneer_1",
+    "mesh": "KneeR.stl",
+    "merged_link": "leg_1_knee_link",
+    "source_mass_kg": 1.31624e-05,
+    "mass_kg": 0.019785758886242222,
+    "policy": "group_total_distributed_by_CAD_volume_APPROXIMATION:user_lower_leg_149g_minus_two_55g_servos_leg_1"
+  },
+  {
+    "source_link": "motor_1723_3",
+    "mesh": "MOTOR_1723_3.stl",
+    "merged_link": "leg_2_hip_link",
+    "source_mass_kg": 5.28583e-06,
+    "mass_kg": 0.006827355672567123,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_1723_3_1",
+    "mesh": "MOTOR_1723_3.stl",
+    "merged_link": "leg_2_knee_link",
+    "source_mass_kg": 5.28583e-06,
+    "mass_kg": 0.006827355672567123,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_1723_3_10",
+    "mesh": "MOTOR_1723_3.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 5.28583e-06,
+    "mass_kg": 0.006827355672567123,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_1723_3_11",
+    "mesh": "MOTOR_1723_3.stl",
+    "merged_link": "leg_4_hip_link",
+    "source_mass_kg": 5.28583e-06,
+    "mass_kg": 0.006827355672567123,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_1723_3_2",
+    "mesh": "MOTOR_1723_3.stl",
+    "merged_link": "leg_1_knee_link",
+    "source_mass_kg": 5.28583e-06,
+    "mass_kg": 0.006827355672567123,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_1723_3_3",
+    "mesh": "MOTOR_1723_3.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 5.28583e-06,
+    "mass_kg": 0.006827355672567123,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_1723_3_4",
+    "mesh": "MOTOR_1723_3.stl",
+    "merged_link": "leg_1_hip_link",
+    "source_mass_kg": 5.28583e-06,
+    "mass_kg": 0.006827355672567123,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_1723_3_5",
+    "mesh": "MOTOR_1723_3.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 5.28583e-06,
+    "mass_kg": 0.006827355672567123,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_1723_3_6",
+    "mesh": "MOTOR_1723_3.stl",
+    "merged_link": "leg_3_hip_link",
+    "source_mass_kg": 5.28583e-06,
+    "mass_kg": 0.006827355672567123,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_1723_3_7",
+    "mesh": "MOTOR_1723_3.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 5.28583e-06,
+    "mass_kg": 0.006827355672567123,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_1723_3_8",
+    "mesh": "MOTOR_1723_3.stl",
+    "merged_link": "leg_3_knee_link",
+    "source_mass_kg": 5.28583e-06,
+    "mass_kg": 0.006827355672567123,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_1723_3_9",
+    "mesh": "MOTOR_1723_3.stl",
+    "merged_link": "leg_4_knee_link",
+    "source_mass_kg": 5.28583e-06,
+    "mass_kg": 0.006827355672567123,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_body",
+    "mesh": "motor_body.stl",
+    "merged_link": "leg_2_hip_link",
+    "source_mass_kg": 1.42533e-05,
+    "mass_kg": 0.01841004130057171,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_body_1",
+    "mesh": "motor_body.stl",
+    "merged_link": "leg_2_knee_link",
+    "source_mass_kg": 1.42533e-05,
+    "mass_kg": 0.01841004130057171,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_body_10",
+    "mesh": "motor_body.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 1.42533e-05,
+    "mass_kg": 0.01841004130057171,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_body_11",
+    "mesh": "motor_body.stl",
+    "merged_link": "leg_4_hip_link",
+    "source_mass_kg": 1.42533e-05,
+    "mass_kg": 0.01841004130057171,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_body_2",
+    "mesh": "motor_body.stl",
+    "merged_link": "leg_1_knee_link",
+    "source_mass_kg": 1.42533e-05,
+    "mass_kg": 0.01841004130057171,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_body_3",
+    "mesh": "motor_body.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 1.42533e-05,
+    "mass_kg": 0.01841004130057171,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_body_4",
+    "mesh": "motor_body.stl",
+    "merged_link": "leg_1_hip_link",
+    "source_mass_kg": 1.42533e-05,
+    "mass_kg": 0.01841004130057171,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_body_5",
+    "mesh": "motor_body.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 1.42533e-05,
+    "mass_kg": 0.01841004130057171,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_body_6",
+    "mesh": "motor_body.stl",
+    "merged_link": "leg_3_hip_link",
+    "source_mass_kg": 1.42533e-05,
+    "mass_kg": 0.01841004130057171,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_body_7",
+    "mesh": "motor_body.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 1.42533e-05,
+    "mass_kg": 0.01841004130057171,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_body_8",
+    "mesh": "motor_body.stl",
+    "merged_link": "leg_3_knee_link",
+    "source_mass_kg": 1.42533e-05,
+    "mass_kg": 0.01841004130057171,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_body_9",
+    "mesh": "motor_body.stl",
+    "merged_link": "leg_4_knee_link",
+    "source_mass_kg": 1.42533e-05,
+    "mass_kg": 0.01841004130057171,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_bottom_cover",
+    "mesh": "motor_bottom_cover.stl",
+    "merged_link": "leg_2_hip_link",
+    "source_mass_kg": 8.52653e-06,
+    "mass_kg": 0.011013152705027169,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_bottom_cover_1",
+    "mesh": "motor_bottom_cover.stl",
+    "merged_link": "leg_2_knee_link",
+    "source_mass_kg": 8.52653e-06,
+    "mass_kg": 0.011013152705027169,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_bottom_cover_10",
+    "mesh": "motor_bottom_cover.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 8.52653e-06,
+    "mass_kg": 0.011013152705027169,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_bottom_cover_11",
+    "mesh": "motor_bottom_cover.stl",
+    "merged_link": "leg_4_hip_link",
+    "source_mass_kg": 8.52653e-06,
+    "mass_kg": 0.011013152705027169,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_bottom_cover_2",
+    "mesh": "motor_bottom_cover.stl",
+    "merged_link": "leg_1_knee_link",
+    "source_mass_kg": 8.52653e-06,
+    "mass_kg": 0.011013152705027169,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_bottom_cover_3",
+    "mesh": "motor_bottom_cover.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 8.52653e-06,
+    "mass_kg": 0.011013152705027169,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_bottom_cover_4",
+    "mesh": "motor_bottom_cover.stl",
+    "merged_link": "leg_1_hip_link",
+    "source_mass_kg": 8.52653e-06,
+    "mass_kg": 0.011013152705027169,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_bottom_cover_5",
+    "mesh": "motor_bottom_cover.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 8.52653e-06,
+    "mass_kg": 0.011013152705027169,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_bottom_cover_6",
+    "mesh": "motor_bottom_cover.stl",
+    "merged_link": "leg_3_hip_link",
+    "source_mass_kg": 8.52653e-06,
+    "mass_kg": 0.011013152705027169,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_bottom_cover_7",
+    "mesh": "motor_bottom_cover.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 8.52653e-06,
+    "mass_kg": 0.011013152705027169,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_bottom_cover_8",
+    "mesh": "motor_bottom_cover.stl",
+    "merged_link": "leg_3_knee_link",
+    "source_mass_kg": 8.52653e-06,
+    "mass_kg": 0.011013152705027169,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_bottom_cover_9",
+    "mesh": "motor_bottom_cover.stl",
+    "merged_link": "leg_4_knee_link",
+    "source_mass_kg": 8.52653e-06,
+    "mass_kg": 0.011013152705027169,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_upper_cover",
+    "mesh": "Motor_upper_Cover.stl",
+    "merged_link": "leg_2_hip_link",
+    "source_mass_kg": 1.11279e-05,
+    "mass_kg": 0.014373169623079005,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_upper_cover_1",
+    "mesh": "Motor_upper_Cover.stl",
+    "merged_link": "leg_2_knee_link",
+    "source_mass_kg": 1.11279e-05,
+    "mass_kg": 0.014373169623079005,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_upper_cover_10",
+    "mesh": "Motor_upper_Cover.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 1.11279e-05,
+    "mass_kg": 0.014373169623079005,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_upper_cover_11",
+    "mesh": "Motor_upper_Cover.stl",
+    "merged_link": "leg_4_hip_link",
+    "source_mass_kg": 1.11279e-05,
+    "mass_kg": 0.014373169623079005,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_upper_cover_2",
+    "mesh": "Motor_upper_Cover.stl",
+    "merged_link": "leg_1_knee_link",
+    "source_mass_kg": 1.11279e-05,
+    "mass_kg": 0.014373169623079005,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_upper_cover_3",
+    "mesh": "Motor_upper_Cover.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 1.11279e-05,
+    "mass_kg": 0.014373169623079005,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_upper_cover_4",
+    "mesh": "Motor_upper_Cover.stl",
+    "merged_link": "leg_1_hip_link",
+    "source_mass_kg": 1.11279e-05,
+    "mass_kg": 0.014373169623079005,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_upper_cover_5",
+    "mesh": "Motor_upper_Cover.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 1.11279e-05,
+    "mass_kg": 0.014373169623079005,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_upper_cover_6",
+    "mesh": "Motor_upper_Cover.stl",
+    "merged_link": "leg_3_hip_link",
+    "source_mass_kg": 1.11279e-05,
+    "mass_kg": 0.014373169623079005,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_upper_cover_7",
+    "mesh": "Motor_upper_Cover.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 1.11279e-05,
+    "mass_kg": 0.014373169623079005,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_upper_cover_8",
+    "mesh": "Motor_upper_Cover.stl",
+    "merged_link": "leg_3_knee_link",
+    "source_mass_kg": 1.11279e-05,
+    "mass_kg": 0.014373169623079005,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "motor_upper_cover_9",
+    "mesh": "Motor_upper_Cover.stl",
+    "merged_link": "leg_4_knee_link",
+    "source_mass_kg": 1.11279e-05,
+    "mass_kg": 0.014373169623079005,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "part_1",
+    "mesh": "Part_1.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 0.00012936,
+    "mass_kg": 0.245,
+    "policy": "user_battery_mass"
+  },
+  {
+    "source_link": "part_14",
+    "mesh": "Part_14.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 2.13332e-05,
+    "mass_kg": 0.024,
+    "policy": "configured_mesh_mass"
+  },
+  {
+    "source_link": "part_14b",
+    "mesh": "Part_14B.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 2.54614e-05,
+    "mass_kg": 0.023,
+    "policy": "configured_mesh_mass"
+  },
+  {
+    "source_link": "part_15",
+    "mesh": "Part_15.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 4.52336e-05,
+    "mass_kg": 0.051,
+    "policy": "configured_mesh_mass"
+  },
+  {
+    "source_link": "part_16",
+    "mesh": "Part_16.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 9.8711e-06,
+    "mass_kg": 0.015,
+    "policy": "configured_mesh_mass"
+  },
+  {
+    "source_link": "part_18",
+    "mesh": "Part_18.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 2.3655e-05,
+    "mass_kg": 0.015,
+    "policy": "configured_mesh_mass"
+  },
+  {
+    "source_link": "part_20",
+    "mesh": "Part_20.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 2.54543e-05,
+    "mass_kg": 0.023,
+    "policy": "configured_mesh_mass"
+  },
+  {
+    "source_link": "pcb",
+    "mesh": "pcb.stl",
+    "merged_link": "leg_2_hip_link",
+    "source_mass_kg": 1.23799e-06,
+    "mass_kg": 0.0015990294899914247,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "pcb_1",
+    "mesh": "pcb.stl",
+    "merged_link": "leg_2_knee_link",
+    "source_mass_kg": 1.23799e-06,
+    "mass_kg": 0.0015990294899914247,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "pcb_10",
+    "mesh": "pcb.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 1.23799e-06,
+    "mass_kg": 0.0015990294899914247,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "pcb_11",
+    "mesh": "pcb.stl",
+    "merged_link": "leg_4_hip_link",
+    "source_mass_kg": 1.23799e-06,
+    "mass_kg": 0.0015990294899914247,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "pcb_2",
+    "mesh": "pcb.stl",
+    "merged_link": "leg_1_knee_link",
+    "source_mass_kg": 1.23799e-06,
+    "mass_kg": 0.0015990294899914247,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "pcb_3",
+    "mesh": "pcb.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 1.23799e-06,
+    "mass_kg": 0.0015990294899914247,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "pcb_4",
+    "mesh": "pcb.stl",
+    "merged_link": "leg_1_hip_link",
+    "source_mass_kg": 1.23799e-06,
+    "mass_kg": 0.0015990294899914247,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "pcb_5",
+    "mesh": "pcb.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 1.23799e-06,
+    "mass_kg": 0.0015990294899914247,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "pcb_6",
+    "mesh": "pcb.stl",
+    "merged_link": "leg_3_hip_link",
+    "source_mass_kg": 1.23799e-06,
+    "mass_kg": 0.0015990294899914247,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "pcb_7",
+    "mesh": "pcb.stl",
+    "merged_link": "base_link",
+    "source_mass_kg": 1.23799e-06,
+    "mass_kg": 0.0015990294899914247,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "pcb_8",
+    "mesh": "pcb.stl",
+    "merged_link": "leg_3_knee_link",
+    "source_mass_kg": 1.23799e-06,
+    "mass_kg": 0.0015990294899914247,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "pcb_9",
+    "mesh": "pcb.stl",
+    "merged_link": "leg_4_knee_link",
+    "source_mass_kg": 1.23799e-06,
+    "mass_kg": 0.0015990294899914247,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll1",
+    "mesh": "roll1.stl",
+    "merged_link": "leg_2_shoulder_link",
+    "source_mass_kg": 5.66049e-07,
+    "mass_kg": 0.0007311279120026462,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll1_1",
+    "mesh": "roll1.stl",
+    "merged_link": "leg_2_hip_link",
+    "source_mass_kg": 5.66049e-07,
+    "mass_kg": 0.0007311279120026462,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll1_10",
+    "mesh": "roll1.stl",
+    "merged_link": "leg_4_shoulder_link",
+    "source_mass_kg": 5.66049e-07,
+    "mass_kg": 0.0007311279120026462,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll1_11",
+    "mesh": "roll1.stl",
+    "merged_link": "leg_4_shoulder_link",
+    "source_mass_kg": 5.66049e-07,
+    "mass_kg": 0.0007311279120026462,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll1_2",
+    "mesh": "roll1.stl",
+    "merged_link": "leg_1_hip_link",
+    "source_mass_kg": 5.66049e-07,
+    "mass_kg": 0.0007311279120026462,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll1_3",
+    "mesh": "roll1.stl",
+    "merged_link": "leg_1_shoulder_link",
+    "source_mass_kg": 5.66049e-07,
+    "mass_kg": 0.0007311279120026462,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll1_4",
+    "mesh": "roll1.stl",
+    "merged_link": "leg_1_shoulder_link",
+    "source_mass_kg": 5.66049e-07,
+    "mass_kg": 0.0007311279120026462,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll1_5",
+    "mesh": "roll1.stl",
+    "merged_link": "leg_2_shoulder_link",
+    "source_mass_kg": 5.66049e-07,
+    "mass_kg": 0.0007311279120026462,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll1_6",
+    "mesh": "roll1.stl",
+    "merged_link": "leg_3_shoulder_link",
+    "source_mass_kg": 5.66049e-07,
+    "mass_kg": 0.0007311279120026462,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll1_7",
+    "mesh": "roll1.stl",
+    "merged_link": "leg_3_shoulder_link",
+    "source_mass_kg": 5.66049e-07,
+    "mass_kg": 0.0007311279120026462,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll1_8",
+    "mesh": "roll1.stl",
+    "merged_link": "leg_3_hip_link",
+    "source_mass_kg": 5.66049e-07,
+    "mass_kg": 0.0007311279120026462,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll1_9",
+    "mesh": "roll1.stl",
+    "merged_link": "leg_4_hip_link",
+    "source_mass_kg": 5.66049e-07,
+    "mass_kg": 0.0007311279120026462,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll2",
+    "mesh": "roll2.stl",
+    "merged_link": "leg_2_shoulder_link",
+    "source_mass_kg": 7.57429e-07,
+    "mass_kg": 0.0009783207518434841,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll2_1",
+    "mesh": "roll2.stl",
+    "merged_link": "leg_2_hip_link",
+    "source_mass_kg": 7.57429e-07,
+    "mass_kg": 0.0009783207518434841,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll2_10",
+    "mesh": "roll2.stl",
+    "merged_link": "leg_4_shoulder_link",
+    "source_mass_kg": 7.57429e-07,
+    "mass_kg": 0.0009783207518434841,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll2_11",
+    "mesh": "roll2.stl",
+    "merged_link": "leg_4_shoulder_link",
+    "source_mass_kg": 7.57429e-07,
+    "mass_kg": 0.0009783207518434841,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll2_2",
+    "mesh": "roll2.stl",
+    "merged_link": "leg_1_hip_link",
+    "source_mass_kg": 7.57429e-07,
+    "mass_kg": 0.0009783207518434841,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll2_3",
+    "mesh": "roll2.stl",
+    "merged_link": "leg_1_shoulder_link",
+    "source_mass_kg": 7.57429e-07,
+    "mass_kg": 0.0009783207518434841,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll2_4",
+    "mesh": "roll2.stl",
+    "merged_link": "leg_1_shoulder_link",
+    "source_mass_kg": 7.57429e-07,
+    "mass_kg": 0.0009783207518434841,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll2_5",
+    "mesh": "roll2.stl",
+    "merged_link": "leg_2_shoulder_link",
+    "source_mass_kg": 7.57429e-07,
+    "mass_kg": 0.0009783207518434841,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll2_6",
+    "mesh": "roll2.stl",
+    "merged_link": "leg_3_shoulder_link",
+    "source_mass_kg": 7.57429e-07,
+    "mass_kg": 0.0009783207518434841,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll2_7",
+    "mesh": "roll2.stl",
+    "merged_link": "leg_3_shoulder_link",
+    "source_mass_kg": 7.57429e-07,
+    "mass_kg": 0.0009783207518434841,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll2_8",
+    "mesh": "roll2.stl",
+    "merged_link": "leg_3_hip_link",
+    "source_mass_kg": 7.57429e-07,
+    "mass_kg": 0.0009783207518434841,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "roll2_9",
+    "mesh": "roll2.stl",
+    "merged_link": "leg_4_hip_link",
+    "source_mass_kg": 7.57429e-07,
+    "mass_kg": 0.0009783207518434841,
+    "policy": "servo_total_distributed_by_CAD_volume_APPROXIMATION"
+  },
+  {
+    "source_link": "shoulderr",
+    "mesh": "ShoulderR.stl",
+    "merged_link": "leg_2_shoulder_link",
+    "source_mass_kg": 1.1621e-05,
+    "mass_kg": 0.010827326064271567,
+    "policy": "configured_link_mass"
+  },
+  {
+    "source_link": "shoulderr_1",
+    "mesh": "ShoulderR.stl",
+    "merged_link": "leg_1_shoulder_link",
+    "source_mass_kg": 1.1621e-05,
+    "mass_kg": 0.010827326064271567,
+    "policy": "configured_link_mass"
+  },
+  {
+    "source_link": "sl",
+    "mesh": "Sl.stl",
+    "merged_link": "leg_3_shoulder_link",
+    "source_mass_kg": 1.1621e-05,
+    "mass_kg": 0.01082738370947734,
+    "policy": "configured_link_mass"
+  },
+  {
+    "source_link": "sl_1",
+    "mesh": "Sl.stl",
+    "merged_link": "leg_4_shoulder_link",
+    "source_mass_kg": 1.1621e-05,
+    "mass_kg": 0.01082738370947734,
+    "policy": "configured_link_mass"
+  },
+  {
+    "source_link": "payload:raspberry_pi_4_surrogate",
+    "mesh": null,
+    "merged_link": "base_link",
+    "source_mass_kg": 0,
+    "mass_kg": 0.05,
+    "policy": "user_added_payload_uniform_cuboid_APPROXIMATION",
+    "reference_source_link": "part_18",
+    "center_in_merged_link_m": [
+      -0.00012950118880585004,
+      0.046774999800300546,
+      0.04200519999999999
+    ],
+    "size_m": [
+      0.085,
+      0.056,
+      0.016
+    ],
+    "notes": "User50g; uniform85x56x16mm mass surrogate, centered on central Pi mounting pattern49x58mm of Part18. PCB85mm axis along rawmeshY; boxbottom at mountingseatZ. 16mm envelope and uniformCoM approximate components. No collider: internal payload contained in torso."
+  },
+  {
+    "source_link": "payload:esp32_imu_wiring_equivalent",
+    "mesh": null,
+    "merged_link": "base_link",
+    "source_mass_kg": 0,
+    "mass_kg": 0.015,
+    "policy": "user_added_payload_uniform_cuboid_APPROXIMATION",
+    "reference_source_link": "part_18",
+    "center_in_merged_link_m": [
+      -0.00012947460159323798,
+      0.04777499876299975,
+      0.036505199999999995
+    ],
+    "size_m": [
+      0.14784934371709824,
+      0.08699999749660492,
+      0.005
+    ],
+    "notes": "User15gcombinedESP32IMUwires; uniform5mmthick mass distribution across electronics tray footprint. Actual layout unknown, position and inertia are an approximation. No extra geometry or collider."
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "material_bugs": [],
+  "status": "IMPORT_READY_CALIBRATION_PENDING",
+  "total_mass_kg": 1.3303094195474978,
+  "mass_components_g": {
+    "battery_g": 245,
+    "shells_g": 150,
+    "frames_g": 46,
+    "mounts_g": 30,
+    "servos_g": 660,
+    "lower_printed_fasteners_g": 156,
+    "shoulder_printed_estimate_g": 43.30941954749781
+  },
+  "all_12_servo_totals_g": [
+    55.0,
+    55.0,
+    55.0,
+    55.0,
+    55.0,
+    55.0,
+    55.0,
+    55.0,
+    55.0,
+    55.0,
+    55.0,
+    55.0
+  ],
+  "maximum_body_mass_error_kg": 3.8458125573015423e-13,
+  "shoulder_limits": [
+    {
+      "joint": "leg_1_shoulder_joint",
+      "lower_rad": -0.5235987755982988,
+      "upper_rad": 0.5235987755982988,
+      "horizontal_q_rad": 0.0,
+      "horizontal_centerline_dz_m": 6.908114080772521e-10
+    },
+    {
+      "joint": "leg_2_shoulder_joint",
+      "lower_rad": -0.5705070638995379,
+      "upper_rad": 0.47669048729705976,
+      "horizontal_q_rad": -0.046908288301239054,
+      "horizontal_centerline_dz_m": -6.990935608186533e-16
+    },
+    {
+      "joint": "leg_3_shoulder_joint",
+      "lower_rad": -0.5235987755982988,
+      "upper_rad": 0.5235987755982988,
+      "horizontal_q_rad": 0.0,
+      "horizontal_centerline_dz_m": 3.9174539015474075e-08
+    },
+    {
+      "joint": "leg_4_shoulder_joint",
+      "lower_rad": -0.5235987755982988,
+      "upper_rad": 0.5235987755982988,
+      "horizontal_q_rad": 0.0,
+      "horizontal_centerline_dz_m": 3.9174539015474075e-08
+    }
+  ],
+  "other_8_joints": "continuous with configured rated effort and no-load velocity; calibration explicitly pending",
+  "opposite_support_horns_grouping_correct": true,
+  "smoke_poses": 7,
+  "max_link_transform_error": 7.793078682372112e-12,
+  "max_visual_transform_error": 1.1209637384990145e-11,
+  "stale_variant_transition_test": "PASS complete -> incomplete -> complete in scratch",
+  "mass_policy_note": "149g lower-leg assembly applied symmetrically: 110g servos +39g printed/fastener equivalent. Shoulder weights remain volume-ratio estimates. Servo mass distribution within housing and horns remains approximate.",
+  "training_ready": false,
+  "portable_archive_rebuild": {
+    "passed": true,
+    "method": "Extract delivery archive to a new workspace directory; run bundled generator against bundled source and meshes; compare URDF bytes.",
+    "urdf_byte_identical": true
+  }
+}
