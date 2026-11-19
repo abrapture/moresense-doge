@@ -1,0 +1,11 @@
+{
+  "source_checkpoint": "/home/ubuntu/moresense_setup/moresense_doge/runtime/walk_training/run_20261027/model_200.pt",
+  "source_sha256": "8edb0b2dccb25bb7fe3d30e3b8679362b69391dc82212990c121d93cff3349ee",
+  "new_run": "/home/ubuntu/moresense_setup/moresense_doge/runtime/walk_training/run_20261027_512",
+  "source_envs": 256,
+  "new_envs": 512,
+  "additional_iterations": 800,
+  "steps_per_env": 24,
+  "ppo_mini_batches": 4,
+  "note": "PPO weights and optimizer resumed from checkpoint; new run has freshly reset simulation environments. Up to a few iterations after checkpoint were not saved."
+}

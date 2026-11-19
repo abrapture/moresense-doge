@@ -1,0 +1,54 @@
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 123
+	Physics step-size     : 0.001
+	Rendering step-size   : 0.02
+	Environment step-size : 0.02
+/workspace/isaaclab/source/isaaclab_newton/isaaclab_newton/cloner/newton_clone_utils.py:165: FutureWarning: Newton shape color replacement is enabled; this workaround will be deprecated in a future release.
+  replace_newton_builder_shape_colors(builder, stage)
+[INFO]: Time taken for scene creation Last: 0.698887 s, Mean: 0.698887 s, Std: 0.000000 s, N: 1
+[INFO]: Scene manager:  <class Bno08xScene>
+	Number of environments: 3
+	Environment spacing   : 6.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.358556 s, Mean: 0.358556 s, Std: 0.000000 s, N: 1
+Initialize solver took: Last: 11.788199 s, Mean: 11.788199 s, Std: 0.000000 s, N: 1
+[INFO]: Time taken for simulation start Last: 21.538641 s, Mean: 21.538641 s, Std: 0.000000 s, N: 1
+[INFO]: Completed setting up the environment...
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 actor :  ['policy']
+	 critic :  ['policy']
+--------------------------------------------------------------------------------
+Actor Model: MLPModel(
+  (obs_normalizer): EmpiricalNormalization()
+  (distribution): GaussianDistribution()
+  (mlp): MLP(
+    (0): Linear(in_features=45, out_features=128, bias=True)
+    (1): ELU(alpha=1.0)
+    (2): Linear(in_features=128, out_features=128, bias=True)
+    (3): ELU(alpha=1.0)
+    (4): Linear(in_features=128, out_features=128, bias=True)
+    (5): ELU(alpha=1.0)
+    (6): Linear(in_features=128, out_features=12, bias=True)
+  )
+)
+Critic Model: MLPModel(
+  (obs_normalizer): EmpiricalNormalization()
+  (mlp): MLP(
+    (0): Linear(in_features=45, out_features=128, bias=True)
+    (1): ELU(alpha=1.0)
+    (2): Linear(in_features=128, out_features=128, bias=True)
+    (3): ELU(alpha=1.0)
+    (4): Linear(in_features=128, out_features=128, bias=True)
+    (5): ELU(alpha=1.0)
+    (6): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+WALK_TRACE_SAMPLE {"time_s": 0.0, "robots": [{"case": "forward_cad_plus_y", "command_body_y_m_s": 0.15000000596046448, "root_position_relative_to_env_m": [0.0, 0.0, 0.15523019433021545], "root_quaternion_xyzw": [0.0, 0.0, 0.0, 1.0], "yaw_deg": 0.0, "tilt_deg": 0.0, "root_velocity_world_m_s": [0.0, 0.0, 0.0], "root_velocity_body_m_s": [0.0, 0.0, 0.0], "reset_in_last_interval": 0, "reset_cumulative": 0}, {"case": "backward_cad_minus_y", "command_body_y_m_s": -0.15000000596046448, "root_position_relative_to_env_m": [0.0, 0.0, 0.15523019433021545], "root_quaternion_xyzw": [0.0, 0.0, 0.0, 1.0], "yaw_deg": 0.0, "tilt_deg": 0.0, "root_velocity_world_m_s": [0.0, 0.0, 0.0], "root_velocity_body_m_s": [0.0, 0.0, 0.0], "reset_in_last_interval": 0, "reset_cumulative": 0}, {"case": "stand", "command_body_y_m_s": 0.0, "root_position_relative_to_env_m": [0.0, 0.0, 0.15523019433021545], "root_quaternion_xyzw": [0.0, 0.0, 0.0, 1.0], "yaw_deg": 0.0, "tilt_deg": 0.0, "root_velocity_world_m_s": [0.0, 0.0, 0.0], "root_velocity_body_m_s": [0.0, 0.0, 0.0], "reset_in_last_interval": 0, "reset_cumulative": 0}]}
+WALK_TRACE_SAMPLE {"time_s": 1.0, "robots": [{"case": "forward_cad_plus_y", "command_body_y_m_s": 0.15000000596046448, "root_position_relative_to_env_m": [-0.004751682281494141, 0.12049579620361328, 0.14244382083415985], "root_quaternion_xyzw": [-0.021185074001550674, 0.0011911942856386304, 0.006622194778174162, 0.9997529983520508], "yaw_deg": 0.7557929158210754, "tilt_deg": 2.431318759918213, "root_velocity_world_m_s": [-0.022350260987877846, 0.12245278060436249, 0.23841562867164612], "root_velocity_body_m_s": [-0.021367765963077545, 0.11253378540277481, 0.2433430403470993], "reset_in_last_interval": 0, "reset_cumulative": 0}, {"case": "backward_cad_minus_y", "command_body_y_m_s": -0.15000000596046448, "root_position_relative_to_env_m": [-0.02146172523498535, -0.12096023559570312, 0.13914906978607178], "root_quaternion_xyzw": [0.06719189137220383, 0.0030015890952199697, -0.1498829424381256, 0.9864134788513184], "yaw_deg": -17.180927276611328, "tilt_deg": 7.712942600250244, "root_velocity_world_m_s": [-0.08248068392276764, -0.12384173274040222, -0.18683810532093048], "root_velocity_body_m_s": [-0.03733455389738083, -0.16618038713932037, -0.16744722425937653], "reset_in_last_interval": 0, "reset_cumulative": 0}, {"case": "stand", "command_body_y_m_s": 0.0, "root_position_relative_to_env_m": [-0.0015680789947509766, 0.0003542900085449219, 0.14946864545345306], "root_quaternion_xyzw": [0.0193673986941576, -0.003360609756782651, -0.019065391272306442, 0.9996250867843628], "yaw_deg": -2.191946268081665, "tilt_deg": 2.2520322799682617, "root_velocity_world_m_s": [-0.03223458677530289, -0.027659041807055473, 0.08122850954532623], "root_velocity_body_m_s": [-0.030666809529066086, -0.025687068700790405, 0.08247357606887817], "reset_in_last_interval": 0, "reset_cumulative": 0}]}
+WALK_TRACE_SAMPLE {"time_s": 2.0, "robots": [{"case": "forward_cad_plus_y", "command_body_y_m_s": 0.15000000596046448, "root_position_relative_to_env_m": [-0.01463627815246582, 0.27210235595703125, 0.14142034947872162], "root_quaternion_xyzw": [-0.006043300498276949, 0.0008484384161420166, 0.0038681665901094675, 0.9999739527702332], "yaw_deg": 0.4426652193069458, "tilt_deg": 0.6982957720756531, "root_velocity_world_m_s": [-0.004462026990950108, 0.1371799111366272, -0.022220836952328682], "root_velocity_body_m_s": [-0.003363309195265174, 0.13746879994869232, -0.020567653700709343], "reset_in_last_interval": 0, "reset_cumulative": 0}, {"case": "backward_cad_minus_y", "command_body_y_m_s": -0.15000000596046448, "root_position_relative_to_env_m": [-0.1060326099395752, -0.24420690536499023, 0.1442956179380417], "root_quaternion_xyzw": [0.07344149798154831, -0.02677571401000023, -0.408623605966568, 0.9093493819236755], "yaw_deg": -48.34358596801758, "tilt_deg": 8.966681480407715, "root_velocity_world_m_s": [-0.10573159158229828, -0.10201530903577805, 0.07380161434412003], "root_velocity_body_m_s": [0.005108274519443512, -0.1335347294807434, 0.0957881361246109], "reset_in_last_interval": 0, "reset_cumulative": 0}, {"case": "stand", "command_body_y_m_s": 0.0, "root_position_relative_to_env_m": [-0.01033782958984375, -0.016527414321899414, 0.15050801634788513], "root_quaternion_xyzw": [0.016306400299072266, 0.0008006084244698286, 0.022331371903419495, 0.9996173977851868], "yaw_deg": 2.560356855392456, "tilt_deg": 1.8703252077102661, "root_velocity_world_m_s": [-0.0060549150221049786, 0.016464609652757645, 0.025916054844856262], "root_velocity_body_m_s": [-0.005335974507033825, 0.01755540445446968, 0.025351984426379204], "reset_in_last_interval": 0, "reset_cumulative": 0}]}
+WALK_TRACE_SAMPLE {"time_s": 3.0, "robots": [{"case": "forward_cad_plus_y", "command_body_y_m_s": 0.15000000596046448, "root_position_relative_to_env_m": [-0.01844024658203125, 0.4166548252105713, 0.1429387480020523], "root_quaternion_xyzw": [-0.008524526841938496, -0.004471445456147194, -0.0156386848539114, 0.9998314380645752], "yaw_deg": -1.787757158279419, "tilt_deg": 1.1023390293121338, "root_velocity_world_m_s": [0.0026741400361061096, 0.1417953372001648, -0.023708710446953773], "root_velocity_body_m_s": [-0.001969012198969722, 0.14219006896018982, -0.021290620788931847], "reset_in_last_interval": 0, "reset_cumulative": 0}, {"case": "backward_cad_minus_y", "command_body_y_m_s": -0.15000000596046448, "root_position_relative_to_env_m": [-0.24118256568908691, -0.30178380012512207, 0.1438196301460266], "root_quaternion_xyzw": [0.06949999183416367, -0.048637401312589645, -0.667977511882782, 0.7393310070037842], "yaw_deg": -84.09361267089844, "tilt_deg": 9.732215881347656, "root_velocity_world_m_s": [-0.11550676822662354, -0.017048828303813934, -0.09406253695487976], "root_velocity_body_m_s": [0.007039921823889017, -0.13075506687164307, -0.07303285598754883], "reset_in_last_interval": 0, "reset_cumulative": 0}, {"case": "stand", "command_body_y_m_s": 0.0, "root_position_relative_to_env_m": [-0.018379926681518555, -0.013527631759643555, 0.14427675306797028], "root_quaternion_xyzw": [0.027674419805407524, -0.00685918377712369, 0.039716459810733795, 0.9988042116165161], "yaw_deg": 4.529263973236084, "tilt_deg": 3.2672855854034424, "root_velocity_world_m_s": [-0.01165241003036499, 0.01051805354654789, -0.1480652242898941], "root_velocity_body_m_s": [-0.01313833985477686, 0.0032929000444710255, -0.14827769994735718], "reset_in_last_interval": 0, "reset_cumulative": 0}]}
