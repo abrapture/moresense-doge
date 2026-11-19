@@ -1,0 +1,60 @@
+{
+  "checkpoint": "/robot/moresense_doge/runtime/walk_training/run_20261027/model_20.pt",
+  "seconds": 3.0,
+  "seed": 123,
+  "body_axes": "CAD Front is +Y; actual mounting must be confirmed",
+  "sensor": "same noisy, delayed BNO08x model used in training",
+  "cases": [
+    {
+      "case": "forward_cad_plus_y",
+      "command_body_y_m_s": 0.15,
+      "mean_body_velocity_xyz_m_s": [
+        0.00016222683188971132,
+        -0.008652261458337307,
+        -0.0017400787910446525
+      ],
+      "mean_abs_body_y_tracking_error_m_s": 0.15865229070186615,
+      "cumulative_world_displacement_m_excluding_reset_jumps": [
+        0.00038504600524902344,
+        -0.026483774185180664,
+        -0.0042875707149505615
+      ],
+      "falls": 0,
+      "max_tilt_degrees": 2.232480049133301
+    },
+    {
+      "case": "backward_cad_minus_y",
+      "command_body_y_m_s": -0.15,
+      "mean_body_velocity_xyz_m_s": [
+        0.29213500022888184,
+        -0.5402572154998779,
+        0.016658281907439232
+      ],
+      "mean_abs_body_y_tracking_error_m_s": 0.39125895500183105,
+      "cumulative_world_displacement_m_excluding_reset_jumps": [
+        -0.007081747055053711,
+        -1.8489044904708862,
+        -0.006746530532836914
+      ],
+      "falls": 0,
+      "max_tilt_degrees": 4.032646179199219
+    },
+    {
+      "case": "stand",
+      "command_body_y_m_s": 0.0,
+      "mean_body_velocity_xyz_m_s": [
+        0.2581826150417328,
+        -0.49748536944389343,
+        0.003130227793008089
+      ],
+      "mean_abs_body_y_tracking_error_m_s": 0.49748536944389343,
+      "cumulative_world_displacement_m_excluding_reset_jumps": [
+        -0.153855562210083,
+        -1.5863957405090332,
+        -0.00535932183265686
+      ],
+      "falls": 0,
+      "max_tilt_degrees": 3.3303134441375732
+    }
+  ]
+}
