@@ -1,0 +1,5 @@
+{"tick": 0, "forward_mps": 0.1}
+{"tick": 8, "forward_mps": 0.1}
+{"tick": 22, "forward_mps": -0.1}
+{"tick": 30, "forward_mps": -0.1}
+{"tick": 34, "stop": true}
