@@ -2,3 +2,11 @@
 *.pt binary
 *.png binary
 *.jpg binary
+/calibration/pose_and_limits.json -text
+/calibration/urdf/moresense_calibrated.urdf -text
+/training/walk_env.py -text
+/training/bno08x_config.json -text
+/training/bno08x.py -text
+/training/isaac_bno08x.py -text
+/verification/stand_pose_candidate.json -text
+/checkpoints/v1_999/metadata.json -text
