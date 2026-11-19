@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-27T05:44:31.027219+00:00",
+  "source_urdf": "moresense_doge_simple.urdf",
+  "source_sha256": "ae3d5e71f384186e5870607baa17ee7ceeba555e4740ed3a3dc2cfd8fc32105a",
+  "calibrated_urdf": "urdf/moresense_calibrated.urdf",
+  "joint_order": [
+    "leg_1_shoulder_joint",
+    "leg_1_hip_joint",
+    "leg_1_knee_joint",
+    "leg_2_shoulder_joint",
+    "leg_2_hip_joint",
+    "leg_2_knee_joint",
+    "leg_3_shoulder_joint",
+    "leg_3_hip_joint",
+    "leg_3_knee_joint",
+    "leg_4_shoulder_joint",
+    "leg_4_hip_joint",
+    "leg_4_knee_joint"
+  ],
+  "initial_root_position_m": [
+    0.0,
+    0.0,
+    0.15689874751503813
+  ],
+  "initial_root_quaternion_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "initial_joint_positions_rad": {
+    "leg_1_shoulder_joint": -0.013962634015954637,
+    "leg_1_hip_joint": -1.6283921921107094,
+    "leg_1_knee_joint": -3.1258846903218442,
+    "leg_2_shoulder_joint": 0.0,
+    "leg_2_hip_joint": -1.0629055144645467,
+    "leg_2_knee_joint": -2.872811948782666,
+    "leg_3_shoulder_joint": 0.0,
+    "leg_3_hip_joint": -1.9669860669976094,
+    "leg_3_knee_joint": 3.2812189937493397,
+    "leg_4_shoulder_joint": 0.0,
+    "leg_4_hip_joint": -1.7418385934903409,
+    "leg_4_knee_joint": 3.0106929596902186
+  },
+  "joint_limits": {
+    "leg_1_shoulder_joint": {
+      "lower_deg": -29.999999999999996,
+      "upper_deg": 29.999999999999996,
+      "confirmed": true,
+      "source": "original_urdf"
+    },
+    "leg_1_hip_joint": {
+      "lower_deg": -132.2,
+      "upper_deg": 36.4,
+      "confirmed": true,
+      "source": "manual_candidate"
+    },
+    "leg_1_knee_joint": {
+      "lower_deg": -197.0,
+      "upper_deg": 36.4,
+      "confirmed": true,
+      "source": "manual_candidate"
+    },
+    "leg_2_shoulder_joint": {
+      "lower_deg": -32.68764694384389,
+      "upper_deg": 27.312353056156105,
+      "confirmed": true,
+      "source": "original_urdf"
+    },
+    "leg_2_hip_joint": {
+      "lower_deg": -99.8,
+      "upper_deg": 68.8,
+      "confirmed": true,
+      "source": "manual_candidate"
+    },
+    "leg_2_knee_joint": {
+      "lower_deg": -188.0,
+      "upper_deg": 55.8,
+      "confirmed": true,
+      "source": "manual_candidate"
+    },
+    "leg_3_shoulder_joint": {
+      "lower_deg": -29.999999999999996,
+      "upper_deg": 29.999999999999996,
+      "confirmed": true,
+      "source": "original_urdf"
+    },
+    "leg_3_hip_joint": {
+      "lower_deg": -151.6,
+      "upper_deg": 23.4,
+      "confirmed": true,
+      "source": "manual_candidate"
+    },
+    "leg_3_knee_joint": {
+      "lower_deg": -28.5,
+      "upper_deg": 211.4,
+      "confirmed": true,
+      "source": "manual_candidate"
+    },
+    "leg_4_shoulder_joint": {
+      "lower_deg": -29.999999999999996,
+      "upper_deg": 29.999999999999996,
+      "confirmed": true,
+      "source": "original_urdf"
+    },
+    "leg_4_hip_joint": {
+      "lower_deg": -125.0,
+      "upper_deg": 36.4,
+      "confirmed": true,
+      "source": "manual_candidate"
+    },
+    "leg_4_knee_joint": {
+      "lower_deg": -47.9,
+      "upper_deg": 198.4,
+      "confirmed": true,
+      "source": "manual_candidate"
+    }
+  },
+  "converted_to_revolute": [
+    "leg_1_hip_joint",
+    "leg_1_knee_joint",
+    "leg_2_hip_joint",
+    "leg_2_knee_joint",
+    "leg_3_hip_joint",
+    "leg_3_knee_joint",
+    "leg_4_hip_joint",
+    "leg_4_knee_joint"
+  ],
+  "all_joint_limits_confirmed": true,
+  "physics_validated": false,
+  "diagnostics": {
+    "feet": {
+      "leg_2_knee_link": {
+        "center_world_m": [
+          -0.11269628924283755,
+          -0.1270069152592721,
+          0.013606804889828725
+        ],
+        "bottom_z_m": 0.0006381670612094353
+      },
+      "leg_1_knee_link": {
+        "center_world_m": [
+          -0.12598582245656398,
+          0.10560512995222551,
+          0.018820796759924943
+        ],
+        "bottom_z_m": 0.0061783781285592
+      },
+      "leg_3_knee_link": {
+        "center_world_m": [
+          0.12413752689758326,
+          0.10029971924106831,
+          0.012500061157490028
+        ],
+        "bottom_z_m": 6.938893903907228e-18
+      },
+      "leg_4_knee_link": {
+        "center_world_m": [
+          0.12038662536968042,
+          -0.1405703746179523,
+          0.012647786613310702
+        ],
+        "bottom_z_m": 0.0001477208193660269
+      }
+    },
+    "foot_height_spread_m": 0.006178378128559193,
+    "lowest_foot_z_m": 6.938893903907228e-18,
+    "approximate_com_world_m": [
+      0.0001866828614689713,
+      -0.016462353883093295,
+      0.15117022721172235
+    ],
+    "model_mass_kg": 1.3953094195481999,
+    "geometry_only": true,
+    "physics_validated": false
+  }
+}
