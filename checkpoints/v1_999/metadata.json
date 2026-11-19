@@ -1,0 +1,168 @@
+{
+  "format_version": 1,
+  "purpose": "experimental simulation policy; not approved for real hardware",
+  "backend": "Newton/MuJoCo Warp",
+  "calibration_sha256": "887d4f7b7445be4b0d6cdcbe694e1ae5effd63f3b97ad2d64ce2fd4ad5128f03",
+  "urdf_sha256": "8f6780d9334fbf2047e61d7fe29a272e8261318f0fec500d1e9c5d5789352ef2",
+  "pose_candidate_sha256": "5c5fe3311c14c6785b4627bed23ef18d92704965d4401884fcf9e7f437e3a64b",
+  "pose_candidate_path": "/robot/moresense_doge/verification/stand_pose_candidate.json",
+  "walk_environment_sha256": "175a96d35e1ca0f0b05cc936a7b3afef02bb7e7e3d21f419e3287d2ff36add7d",
+  "bno08x_config_sha256": "dd403134f5e947c756be049a2d82724cef21e459bc559dbedaa5bf88171583da",
+  "bno08x_observer_sha256": "2183aea5a2bf1e59e574d41a50fc83b0dae91a905565ad2b952d022c9db170d5",
+  "bno08x_model_sha256": "83dbac0a0153b0725435e2d90461b9519f34b185b3754853edb5adf1a8e0f6e0",
+  "joint_order": [
+    "leg_1_shoulder_joint",
+    "leg_1_hip_joint",
+    "leg_1_knee_joint",
+    "leg_2_shoulder_joint",
+    "leg_2_hip_joint",
+    "leg_2_knee_joint",
+    "leg_3_shoulder_joint",
+    "leg_3_hip_joint",
+    "leg_3_knee_joint",
+    "leg_4_shoulder_joint",
+    "leg_4_hip_joint",
+    "leg_4_knee_joint"
+  ],
+  "stand_joint_positions_rad": [
+    -0.013962634015954637,
+    -1.613912869813975,
+    -3.0575230972713507,
+    0.0,
+    -1.092066507456255,
+    -2.884646413162636,
+    0.0,
+    -1.972819393891396,
+    3.307471825131079,
+    0.0,
+    -1.72099887288622,
+    3.043410630850992
+  ],
+  "joint_limits_deg": {
+    "leg_1_shoulder_joint": {
+      "lower_deg": -29.999999999999996,
+      "upper_deg": 29.999999999999996,
+      "confirmed": true,
+      "source": "original_urdf"
+    },
+    "leg_1_hip_joint": {
+      "lower_deg": -132.2,
+      "upper_deg": 36.4,
+      "confirmed": true,
+      "source": "manual_candidate"
+    },
+    "leg_1_knee_joint": {
+      "lower_deg": -197.0,
+      "upper_deg": 36.4,
+      "confirmed": true,
+      "source": "manual_candidate"
+    },
+    "leg_2_shoulder_joint": {
+      "lower_deg": -32.68764694384389,
+      "upper_deg": 27.312353056156105,
+      "confirmed": true,
+      "source": "original_urdf"
+    },
+    "leg_2_hip_joint": {
+      "lower_deg": -99.8,
+      "upper_deg": 68.8,
+      "confirmed": true,
+      "source": "manual_candidate"
+    },
+    "leg_2_knee_joint": {
+      "lower_deg": -188.0,
+      "upper_deg": 55.8,
+      "confirmed": true,
+      "source": "manual_candidate"
+    },
+    "leg_3_shoulder_joint": {
+      "lower_deg": -29.999999999999996,
+      "upper_deg": 29.999999999999996,
+      "confirmed": true,
+      "source": "original_urdf"
+    },
+    "leg_3_hip_joint": {
+      "lower_deg": -151.6,
+      "upper_deg": 23.4,
+      "confirmed": true,
+      "source": "manual_candidate"
+    },
+    "leg_3_knee_joint": {
+      "lower_deg": -28.5,
+      "upper_deg": 211.4,
+      "confirmed": true,
+      "source": "manual_candidate"
+    },
+    "leg_4_shoulder_joint": {
+      "lower_deg": -29.999999999999996,
+      "upper_deg": 29.999999999999996,
+      "confirmed": true,
+      "source": "original_urdf"
+    },
+    "leg_4_hip_joint": {
+      "lower_deg": -125.0,
+      "upper_deg": 36.4,
+      "confirmed": true,
+      "source": "manual_candidate"
+    },
+    "leg_4_knee_joint": {
+      "lower_deg": -47.9,
+      "upper_deg": 198.4,
+      "confirmed": true,
+      "source": "manual_candidate"
+    }
+  },
+  "observation_order": [
+    {
+      "name": "gyro_body_xyz",
+      "units": "rad/s",
+      "size": 3
+    },
+    {
+      "name": "gravity_direction_body_xyz",
+      "units": "unit vector",
+      "size": 3
+    },
+    {
+      "name": "encoder_joint_position_minus_stand",
+      "units": "rad",
+      "size": 12,
+      "order": "joint_order"
+    },
+    {
+      "name": "encoder_joint_velocity_finite_difference",
+      "units": "rad/s",
+      "size": 12,
+      "order": "joint_order"
+    },
+    {
+      "name": "previous_clipped_action",
+      "units": "dimensionless",
+      "size": 12,
+      "order": "joint_order"
+    },
+    {
+      "name": "body_velocity_command_vx_vy_yaw",
+      "units": "m/s,m/s,rad/s",
+      "size": 3
+    }
+  ],
+  "observation_size": 45,
+  "action_size": 12,
+  "output": "clip policy output to [-1, 1], multiply by action_scale_rad, add stand_joint_positions_rad, clip to joint_limits_deg",
+  "action_scale_rad": 0.25,
+  "policy_period_s": 0.02,
+  "physics_period_s": 0.001,
+  "controller_simulation_only": {
+    "kp": 6.0,
+    "kd": 0.2,
+    "effort_limit_nm": 0.980665,
+    "no_load_speed_rad_s": 4.717
+  },
+  "imu_simulation": {
+    "model": "BNO08x approximation",
+    "details": "training/bno08x_config.json"
+  },
+  "command_frame": "body coordinates: +Y points toward CAD Front; actual mounting must be verified",
+  "actor_observation_normalization": "included inside exported policy"
+}
