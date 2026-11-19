@@ -1,0 +1,25 @@
+{
+  "model_sha256": "cf17798f392a20b1407c0c16e9551c6b20dc4af298f6401921b4a9a460b5432b",
+  "tested_viser_version": "1.1.1",
+  "tested_yourdfpy_version": "0.0.60",
+  "server_python_version": "3.12.3",
+  "mode": "KINEMATIC_POSE_EDITOR_NO_PHYSICS",
+  "core_tests": {
+    "independent_forward_kinematics": true,
+    "exact_cylinder_foot_support": true,
+    "confirmed_limit_export_and_source_preservation": true,
+    "saved_pose_roundtrip_and_wrong_source_rejection": true,
+    "invalid_parameters_rejected": true
+  },
+  "browser_checks": {
+    "connected_to_remote_editor_through_ssh_tunnel": true,
+    "robot_meshes_and_leg_labels_visible": true,
+    "hip_angle_changed_to_5_degrees_then_restored_to_zero": true,
+    "foot_height_updated_after_angle_change": true,
+    "collision_visibility_toggle": true,
+    "starting_pose_restored_after_browser_check": true
+  },
+  "source_robot_unchanged": true,
+  "gpu_required_for_editor": false,
+  "physics_validated": false
+}
