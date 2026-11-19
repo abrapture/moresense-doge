@@ -1,0 +1,99 @@
+{
+  "backend": "Newton/MuJoCo Warp",
+  "seconds": 2.1,
+  "pose_candidate_sha256": "5c5fe3311c14c6785b4627bed23ef18d92704965d4401884fcf9e7f437e3a64b",
+  "execution": "sequential single environment",
+  "dt_s": 0.001,
+  "settle_reference_s": 0.501,
+  "metrics_window_s": 1.0,
+  "effort_limit_nm": 0.980665,
+  "contact_measurement": "normal force on the whole lower-leg/foot link against floor, not foot-only",
+  "contact_threshold_n": 0.1,
+  "self_collision": false,
+  "results": [
+    {
+      "trial": 0,
+      "kp": 2.0,
+      "kd": 0.05,
+      "final_drift_from_start_m": 0.03471045941114426,
+      "final_drift_from_settle_m": 0.00238011940382421,
+      "tail_mean_horizontal_speed_m_s": 0.006166066974401474,
+      "tail_max_horizontal_speed_m_s": 0.017910512164235115,
+      "tail_mean_abs_joint_error_rad": 0.06703556329011917,
+      "tail_max_abs_joint_error_rad": 0.13866329193115234,
+      "tail_all_four_lower_leg_contact_fraction": 1.0,
+      "tail_saturated_any_joint_fraction": 0.0,
+      "tail_mean_lower_leg_normal_forces_n": [
+        3.12261962890625,
+        3.7339367866516113,
+        2.9181838035583496,
+        3.904954433441162
+      ],
+      "tail_max_tilt_deg": 0.3685048222541809,
+      "tail_max_drift_from_settle_m": 0.0051045287400484085
+    },
+    {
+      "trial": 1,
+      "kp": 2.0,
+      "kd": 0.2,
+      "final_drift_from_start_m": 0.03949660435318947,
+      "final_drift_from_settle_m": 0.014735261909663677,
+      "tail_mean_horizontal_speed_m_s": 0.010921992361545563,
+      "tail_max_horizontal_speed_m_s": 0.04997977241873741,
+      "tail_mean_abs_joint_error_rad": 0.06892083585262299,
+      "tail_max_abs_joint_error_rad": 0.15864920616149902,
+      "tail_all_four_lower_leg_contact_fraction": 0.9540000557899475,
+      "tail_saturated_any_joint_fraction": 0.06000000238418579,
+      "tail_mean_lower_leg_normal_forces_n": [
+        3.0274817943573,
+        3.631168842315674,
+        3.3322594165802,
+        3.6902260780334473
+      ],
+      "tail_max_tilt_deg": 2.056046724319458,
+      "tail_max_drift_from_settle_m": 0.014735261909663677
+    },
+    {
+      "trial": 2,
+      "kp": 6.0,
+      "kd": 0.05,
+      "final_drift_from_start_m": 0.01902230642735958,
+      "final_drift_from_settle_m": 0.0015202949289232492,
+      "tail_mean_horizontal_speed_m_s": 0.0014030945021659136,
+      "tail_max_horizontal_speed_m_s": 0.005220184568315744,
+      "tail_mean_abs_joint_error_rad": 0.02002795971930027,
+      "tail_max_abs_joint_error_rad": 0.04393649101257324,
+      "tail_all_four_lower_leg_contact_fraction": 1.0,
+      "tail_saturated_any_joint_fraction": 0.0,
+      "tail_mean_lower_leg_normal_forces_n": [
+        3.3643128871917725,
+        3.2550876140594482,
+        3.200655221939087,
+        3.8687968254089355
+      ],
+      "tail_max_tilt_deg": 0.12820425629615784,
+      "tail_max_drift_from_settle_m": 0.0017216745764017105
+    },
+    {
+      "trial": 3,
+      "kp": 6.0,
+      "kd": 0.2,
+      "final_drift_from_start_m": 0.02115067094564438,
+      "final_drift_from_settle_m": 0.0013726612087339163,
+      "tail_mean_horizontal_speed_m_s": 0.0008192536770366132,
+      "tail_max_horizontal_speed_m_s": 0.001691904733888805,
+      "tail_mean_abs_joint_error_rad": 0.019767899066209793,
+      "tail_max_abs_joint_error_rad": 0.04524993896484375,
+      "tail_all_four_lower_leg_contact_fraction": 1.0,
+      "tail_saturated_any_joint_fraction": 0.0,
+      "tail_mean_lower_leg_normal_forces_n": [
+        3.3240811824798584,
+        3.289163827896118,
+        3.2450642585754395,
+        3.8298118114471436
+      ],
+      "tail_max_tilt_deg": 0.14127421379089355,
+      "tail_max_drift_from_settle_m": 0.0013726612087339163
+    }
+  ]
+}

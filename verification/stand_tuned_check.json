@@ -1,0 +1,220 @@
+{
+  "backend": "Newton/MuJoCo Warp",
+  "purpose": "provisional stand check, not training",
+  "seconds": 1.0,
+  "initial_joint_error_rad": 0.0,
+  "joint_names": [
+    "leg_1_shoulder_joint",
+    "leg_1_hip_joint",
+    "leg_1_knee_joint",
+    "leg_2_shoulder_joint",
+    "leg_2_hip_joint",
+    "leg_2_knee_joint",
+    "leg_3_shoulder_joint",
+    "leg_3_hip_joint",
+    "leg_3_knee_joint",
+    "leg_4_shoulder_joint",
+    "leg_4_hip_joint",
+    "leg_4_knee_joint"
+  ],
+  "max_joint_error_rad": 0.23685336112976074,
+  "max_tilt_deg": 3.226593180015739,
+  "max_horizontal_drift_m": 0.05869688093662262,
+  "max_effort_nm": 0.4793644845485687,
+  "saturated_step_fraction": 0.0,
+  "controller": {
+    "kp": 2.0,
+    "kd": 0.01,
+    "physics_dt_s": 0.001,
+    "effort_limit_nm": 0.980665,
+    "reference_no_load_speed_rad_s": 4.717
+  },
+  "contact_measurement": "filtered normal force on knee link against floor; lower leg and foot share this body",
+  "knee_link_contacts": {
+    "1": {
+      "contact_steps": 932,
+      "max_normal_force_n": 6.862069606781006,
+      "contact_fraction": 0.932,
+      "mean_normal_force_n": 2.9788357134461405
+    },
+    "2": {
+      "contact_steps": 936,
+      "max_normal_force_n": 5.332668781280518,
+      "contact_fraction": 0.936,
+      "mean_normal_force_n": 3.620346090435982
+    },
+    "3": {
+      "contact_steps": 998,
+      "max_normal_force_n": 8.203585624694824,
+      "contact_fraction": 0.998,
+      "mean_normal_force_n": 3.0799183388352396
+    },
+    "4": {
+      "contact_steps": 988,
+      "max_normal_force_n": 5.346548080444336,
+      "contact_fraction": 0.988,
+      "mean_normal_force_n": 3.8802800113260747
+    }
+  },
+  "self_collision": false,
+  "samples": [
+    {
+      "time_s": 0.001,
+      "root_z_m": 0.156888946890831,
+      "tilt_deg": 0.0,
+      "horizontal_drift_m": 5.802671169084783e-13,
+      "max_joint_error_rad": 5.391374152674544e-11,
+      "max_effort_nm": 0.0,
+      "knee_link_floor_normal_forces_n": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      }
+    },
+    {
+      "time_s": 0.101,
+      "root_z_m": 0.14149872958660126,
+      "tilt_deg": 3.1556630722185837,
+      "horizontal_drift_m": 0.006940947379916906,
+      "max_joint_error_rad": 0.23185276985168457,
+      "max_effort_nm": 0.4553619921207428,
+      "knee_link_floor_normal_forces_n": {
+        "1": 5.954738616943359,
+        "2": 3.4365036487579346,
+        "3": 7.66400146484375,
+        "4": 3.2370810508728027
+      }
+    },
+    {
+      "time_s": 0.201,
+      "root_z_m": 0.14617812633514404,
+      "tilt_deg": 1.8948978211601453,
+      "horizontal_drift_m": 0.02446465939283371,
+      "max_joint_error_rad": 0.12347030639648438,
+      "max_effort_nm": 0.2545982897281647,
+      "knee_link_floor_normal_forces_n": {
+        "1": 2.3052234649658203,
+        "2": 3.84261155128479,
+        "3": 1.5373049974441528,
+        "4": 3.5153770446777344
+      }
+    },
+    {
+      "time_s": 0.301,
+      "root_z_m": 0.14106658101081848,
+      "tilt_deg": 1.627798855008926,
+      "horizontal_drift_m": 0.03794543072581291,
+      "max_joint_error_rad": 0.20034313201904297,
+      "max_effort_nm": 0.4009387195110321,
+      "knee_link_floor_normal_forces_n": {
+        "1": 2.4167096614837646,
+        "2": 4.980135440826416,
+        "3": 2.5398268699645996,
+        "4": 4.841404914855957
+      }
+    },
+    {
+      "time_s": 0.401,
+      "root_z_m": 0.14076724648475647,
+      "tilt_deg": 1.2274621926010305,
+      "horizontal_drift_m": 0.04236854985356331,
+      "max_joint_error_rad": 0.22081351280212402,
+      "max_effort_nm": 0.44231948256492615,
+      "knee_link_floor_normal_forces_n": {
+        "1": 2.6983754634857178,
+        "2": 3.633599281311035,
+        "3": 3.117043972015381,
+        "4": 5.327056407928467
+      }
+    },
+    {
+      "time_s": 0.501,
+      "root_z_m": 0.14379897713661194,
+      "tilt_deg": 1.0577029130966147,
+      "horizontal_drift_m": 0.03821936622262001,
+      "max_joint_error_rad": 0.17282795906066895,
+      "max_effort_nm": 0.3412574231624603,
+      "knee_link_floor_normal_forces_n": {
+        "1": 2.672135829925537,
+        "2": 3.7164688110351562,
+        "3": 2.228400230407715,
+        "4": 4.169964790344238
+      }
+    },
+    {
+      "time_s": 0.601,
+      "root_z_m": 0.14436179399490356,
+      "tilt_deg": 1.202747353700002,
+      "horizontal_drift_m": 0.031908031553030014,
+      "max_joint_error_rad": 0.14026474952697754,
+      "max_effort_nm": 0.2784450352191925,
+      "knee_link_floor_normal_forces_n": {
+        "1": 3.9531490802764893,
+        "2": 3.4043333530426025,
+        "3": 3.513059616088867,
+        "4": 3.5489087104797363
+      }
+    },
+    {
+      "time_s": 0.7010000000000001,
+      "root_z_m": 0.14517563581466675,
+      "tilt_deg": 1.1423793780230027,
+      "horizontal_drift_m": 0.03223792091012001,
+      "max_joint_error_rad": 0.13393235206604004,
+      "max_effort_nm": 0.26914942264556885,
+      "knee_link_floor_normal_forces_n": {
+        "1": 3.2257559299468994,
+        "2": 3.085766077041626,
+        "3": 3.305393934249878,
+        "4": 3.4323248863220215
+      }
+    },
+    {
+      "time_s": 0.801,
+      "root_z_m": 0.1437939554452896,
+      "tilt_deg": 1.0045961926761973,
+      "horizontal_drift_m": 0.04081115126609802,
+      "max_joint_error_rad": 0.1587529182434082,
+      "max_effort_nm": 0.3200381398200989,
+      "knee_link_floor_normal_forces_n": {
+        "1": 3.654383897781372,
+        "2": 3.7667343616485596,
+        "3": 2.7940566539764404,
+        "4": 3.7784602642059326
+      }
+    },
+    {
+      "time_s": 0.901,
+      "root_z_m": 0.1414726972579956,
+      "tilt_deg": 0.18203068005291026,
+      "horizontal_drift_m": 0.05159194767475128,
+      "max_joint_error_rad": 0.19295310974121094,
+      "max_effort_nm": 0.38781046867370605,
+      "knee_link_floor_normal_forces_n": {
+        "1": 3.2130560874938965,
+        "2": 4.857171535491943,
+        "3": 2.9552390575408936,
+        "4": 4.708041191101074
+      }
+    },
+    {
+      "time_s": 1.0,
+      "root_z_m": 0.14167115092277527,
+      "tilt_deg": 0.12255037650908818,
+      "horizontal_drift_m": 0.05869688093662262,
+      "max_joint_error_rad": 0.1728217601776123,
+      "max_effort_nm": 0.35118040442466736,
+      "knee_link_floor_normal_forces_n": {
+        "1": 2.4454588890075684,
+        "2": 4.614748954772949,
+        "3": 2.3725333213806152,
+        "4": 4.685768127441406
+      }
+    }
+  ],
+  "calibration_snapshot_sha256": {
+    "pose_and_limits.json": "887d4f7b7445be4b0d6cdcbe694e1ae5effd63f3b97ad2d64ce2fd4ad5128f03",
+    "urdf/moresense_calibrated.urdf": "8f6780d9334fbf2047e61d7fe29a272e8261318f0fec500d1e9c5d5789352ef2"
+  }
+}

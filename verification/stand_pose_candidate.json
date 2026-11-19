@@ -1,0 +1,89 @@
+{
+  "source": "work/stand_calibration_snapshot/pose_and_limits.json",
+  "method": "SLSQP equal bottom height, approximate mirrored foot centers and minimal joint changes; all confirmed limits respected",
+  "optimization_success": true,
+  "message": "Optimization terminated successfully",
+  "initial_joint_positions_rad": {
+    "leg_1_shoulder_joint": -0.013962634015954637,
+    "leg_1_hip_joint": -1.613912869813975,
+    "leg_1_knee_joint": -3.0575230972713507,
+    "leg_2_shoulder_joint": 0.0,
+    "leg_2_hip_joint": -1.092066507456255,
+    "leg_2_knee_joint": -2.884646413162636,
+    "leg_3_shoulder_joint": 0.0,
+    "leg_3_hip_joint": -1.972819393891396,
+    "leg_3_knee_joint": 3.307471825131079,
+    "leg_4_shoulder_joint": 0.0,
+    "leg_4_hip_joint": -1.72099887288622,
+    "leg_4_knee_joint": 3.043410630850992
+  },
+  "initial_root_position_m": [
+    0,
+    0,
+    0.15523019538493246
+  ],
+  "initial_root_quaternion_wxyz": [
+    1,
+    0,
+    0,
+    0
+  ],
+  "joint_changes_deg": {
+    "leg_1_hip_joint": 0.8296040578125463,
+    "leg_1_knee_joint": 3.9168307625841363,
+    "leg_2_hip_joint": -1.6708018248354557,
+    "leg_2_knee_joint": -0.6780648617701838,
+    "leg_3_hip_joint": -0.3342250115341352,
+    "leg_3_knee_joint": 1.5041764384422687,
+    "leg_4_hip_joint": 1.1940280368479481,
+    "leg_4_knee_joint": 1.8745844730092112
+  },
+  "diagnostics": {
+    "feet": {
+      "leg_2_knee_link": {
+        "center_world_m": [
+          -0.11274466587741125,
+          -0.13050513995432353,
+          0.01296863668230569
+        ],
+        "bottom_z_m": -9.020562075079397e-17
+      },
+      "leg_1_knee_link": {
+        "center_world_m": [
+          -0.12604884212555817,
+          0.10174094368595635,
+          0.012642420395679338
+        ],
+        "bottom_z_m": -1.4051260155412137e-16
+      },
+      "leg_3_knee_link": {
+        "center_world_m": [
+          0.12413755665603282,
+          0.1017838220566937,
+          0.012500059877283184
+        ],
+        "bottom_z_m": 4.458239333260394e-16
+      },
+      "leg_4_knee_link": {
+        "center_world_m": [
+          0.12038668859510523,
+          -0.13419898644131245,
+          0.01250006336391242
+        ],
+        "bottom_z_m": -1.8388068845354155e-16
+      }
+    },
+    "foot_height_spread_m": 6.29704621779581e-16,
+    "lowest_foot_z_m": -1.8388068845354155e-16,
+    "approximate_com_world_m": [
+      0.00017905843770765905,
+      -0.016457265311909757,
+      0.14949343297385517
+    ],
+    "model_mass_kg": 1.3953094195481999,
+    "geometry_only": true,
+    "physics_validated": false
+  },
+  "com_margin_to_foot_center_polygon_m": 0.11582255543087698,
+  "warning": "Geometry only; circular foot centers approximate contact points; requires Newton dynamic test and collision check."
+}

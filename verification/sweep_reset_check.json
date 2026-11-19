@@ -1,0 +1,154 @@
+{
+  "backend": "Newton/MuJoCo Warp",
+  "seconds": 2.1,
+  "pose_candidate_sha256": "5c5fe3311c14c6785b4627bed23ef18d92704965d4401884fcf9e7f437e3a64b",
+  "execution": "sequential single environment",
+  "dt_s": 0.001,
+  "settle_reference_s": 0.501,
+  "metrics_window_s": 1.0,
+  "effort_limit_nm": 0.980665,
+  "contact_measurement": "normal force on the whole lower-leg/foot link against floor, not foot-only",
+  "geometry_measurement": "minimum signed heights to horizontal ground plane from body-link poses, proximity is not proof of contact",
+  "contact_threshold_n": 0.1,
+  "self_collision": false,
+  "results": [
+    {
+      "trial": 0,
+      "kp": 4.0,
+      "kd": 0.1,
+      "final_drift_from_start_m": 0.032293181866407394,
+      "final_drift_from_settle_m": 0.009285904467105865,
+      "tail_mean_horizontal_speed_m_s": 0.006080237217247486,
+      "tail_max_horizontal_speed_m_s": 0.021377407014369965,
+      "tail_mean_abs_joint_error_rad": 0.03782866895198822,
+      "tail_max_abs_joint_error_rad": 0.09564208984375,
+      "tail_all_four_lower_leg_contact_fraction": 0.968000054359436,
+      "tail_saturated_any_joint_fraction": 0.0,
+      "tail_mean_lower_leg_normal_forces_n": [
+        3.317021369934082,
+        3.2871665954589844,
+        3.2067461013793945,
+        3.8692755699157715
+      ],
+      "tail_max_tilt_deg": 0.38966768980026245,
+      "tail_max_drift_from_settle_m": 0.009324232116341591,
+      "initial_foot_min_z_m": [
+        -1.30385160446167e-08,
+        -7.450580596923828e-09,
+        -2.0489096641540527e-08,
+        -2.514570951461792e-08
+      ],
+      "initial_lower_leg_box_min_z_m": [
+        0.015134910121560097,
+        0.014749698340892792,
+        0.015323024243116379,
+        0.015545349568128586
+      ],
+      "tail_foot_min_z_m": [
+        -0.0007906444370746613,
+        -0.0008263299241662025,
+        -0.0007749069482088089,
+        -0.004726862534880638
+      ],
+      "tail_foot_max_z_m": [
+        -0.0006613424047827721,
+        -0.0007157986983656883,
+        -0.0006666975095868111,
+        -0.000812373124063015
+      ],
+      "tail_foot_mean_z_m": [
+        -0.0007451656856574118,
+        -0.0007544970139861107,
+        -0.0007102605886757374,
+        -0.0017620645230636
+      ],
+      "tail_lower_leg_box_min_z_m": [
+        0.011663353070616722,
+        0.013134503737092018,
+        0.01149657741189003,
+        0.011643806472420692
+      ],
+      "tail_foot_within_1mm_fraction": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tail_lower_leg_box_within_1mm_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "trial": 1,
+      "kp": 6.0,
+      "kd": 0.1,
+      "final_drift_from_start_m": 0.017418580129742622,
+      "final_drift_from_settle_m": 0.0015595417935401201,
+      "tail_mean_horizontal_speed_m_s": 0.0009273187606595457,
+      "tail_max_horizontal_speed_m_s": 0.003421334782615304,
+      "tail_mean_abs_joint_error_rad": 0.020114783197641373,
+      "tail_max_abs_joint_error_rad": 0.0444636344909668,
+      "tail_all_four_lower_leg_contact_fraction": 1.0,
+      "tail_saturated_any_joint_fraction": 0.0,
+      "tail_mean_lower_leg_normal_forces_n": [
+        3.3863470554351807,
+        3.2336528301239014,
+        3.1889121532440186,
+        3.877920389175415
+      ],
+      "tail_max_tilt_deg": 0.1266688108444214,
+      "tail_max_drift_from_settle_m": 0.0015595417935401201,
+      "initial_foot_min_z_m": [
+        -1.30385160446167e-08,
+        -7.450580596923828e-09,
+        -2.0489096641540527e-08,
+        -2.514570951461792e-08
+      ],
+      "initial_lower_leg_box_min_z_m": [
+        0.015134910121560097,
+        0.014749698340892792,
+        0.015323024243116379,
+        0.015545349568128586
+      ],
+      "tail_foot_min_z_m": [
+        -0.0007651560008525848,
+        -0.0007500117644667625,
+        -0.0007084570825099945,
+        -0.0008235080167651176
+      ],
+      "tail_foot_max_z_m": [
+        -0.0007518623024225235,
+        -0.0007354961708188057,
+        -0.0007021818310022354,
+        -0.0008163340389728546
+      ],
+      "tail_foot_mean_z_m": [
+        -0.0007566878921352327,
+        -0.0007454694132320583,
+        -0.0007066131802275777,
+        -0.0008184344624169171
+      ],
+      "tail_lower_leg_box_min_z_m": [
+        0.013146830722689629,
+        0.013255411759018898,
+        0.013233356177806854,
+        0.013792641460895538
+      ],
+      "tail_foot_within_1mm_fraction": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tail_lower_leg_box_within_1mm_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}
