@@ -1,0 +1,41 @@
+test_exact_delay_step_response (test_bno08x.Bno08xTests.test_exact_delay_step_response) ... ok
+test_full_batch_partial_reset_and_empty_reset (test_bno08x.Bno08xTests.test_full_batch_partial_reset_and_empty_reset) ... ok
+test_known_rotation_and_gravity_contract (test_bno08x.Bno08xTests.test_known_rotation_and_gravity_contract) ... ok
+test_noise_scales_and_unit_gravity (test_bno08x.Bno08xTests.test_noise_scales_and_unit_gravity) ... ok
+test_partial_reset_removes_old_episode_only (test_bno08x.Bno08xTests.test_partial_reset_removes_old_episode_only) ... ok
+test_rejects_inexact_timing_invalid_values_and_uninitialized_read (test_bno08x.Bno08xTests.test_rejects_inexact_timing_invalid_values_and_uninitialized_read) ... ok
+test_sample_hold_readonly_and_clone (test_bno08x.Bno08xTests.test_sample_hold_readonly_and_clone) ... ok
+test_seeded_cpu_reproducibility_with_partial_resets (test_bno08x.Bno08xTests.test_seeded_cpu_reproducibility_with_partial_resets) ... ok
+test_control_interval_cannot_replace_physics_ticks (test_isaac_bno08x.ObserverTests.test_control_interval_cannot_replace_physics_ticks) ... ok
+test_proxyarray_delay_and_read_are_explicit (test_isaac_bno08x.ObserverTests.test_proxyarray_delay_and_read_are_explicit) ... ok
+test_quaternion_fallback_and_explicit_robot (test_isaac_bno08x.ObserverTests.test_quaternion_fallback_and_explicit_robot) ... ok
+test_selective_reset_flushes_only_reset_environment (test_isaac_bno08x.ObserverTests.test_selective_reset_flushes_only_reset_environment) ... ok
+test_invalid_quaternions_are_rejected (test_isaac_bno08x.QuaternionContractTests.test_invalid_quaternions_are_rejected) ... ok
+test_xyzw_identity_roll_pitch_and_yaw (test_isaac_bno08x.QuaternionContractTests.test_xyzw_identity_roll_pitch_and_yaw) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.091s
+
+OK
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 42
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.02
+	Environment step-size : 0.005
+/workspace/isaaclab/source/isaaclab_newton/isaaclab_newton/cloner/newton_clone_utils.py:165: FutureWarning: Newton shape color replacement is enabled; this workaround will be deprecated in a future release.
+  replace_newton_builder_shape_colors(builder, stage)
+[INFO]: Time taken for scene creation Last: 0.800131 s, Mean: 0.800131 s, Std: 0.000000 s, N: 1
+[INFO]: Scene manager:  <class Bno08xScene>
+	Number of environments: 8
+	Environment spacing   : 2.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.365916 s, Mean: 0.365916 s, Std: 0.000000 s, N: 1
+Actuator groups cover 0 joints; expected 12 after accounting for fixed tendons.
+Initialize solver took: Last: 15.716629 s, Mean: 15.716629 s, Std: 0.000000 s, N: 1
+[INFO]: Time taken for simulation start Last: 22.766066 s, Mean: 22.766066 s, Std: 0.000000 s, N: 1
+[INFO]: Completed setting up the environment...
+BNO08X_ISAAC_CHECK_PASSED {"passed": true, "purpose": "Sensor integration only; no locomotion training or contact validation.", "backend": "Newton / MuJoCo Warp", "device": "cuda:0", "num_envs": 8, "physics_steps": 100, "delayed_state_comparison_steps": 48, "automatic_resets_checked": 8, "max_reset_measurement_component_error": 0.013637049123644829, "physics_dt_s": 0.005, "policy_observation_shape": [8, 30], "moving_joints": 12, "sensor_cfg": {"sample_rate_hz": 100.0, "delay_s": 0.01, "gyro_noise_std": 0.005, "gyro_bias_std": 0.002, "tilt_noise_std_deg": 0.25, "tilt_bias_std_deg": 0.2, "validate_inputs": false}, "max_gravity_unit_norm_error": 5.960464477539063e-08, "max_sample_hold_error": 0.0, "max_noiseless_delayed_physics_error": 1.1920928955078125e-07, "max_noisy_delayed_physics_component_error": 0.018640955910086632, "max_root_quaternion_component_change": 0.04741161689162254}

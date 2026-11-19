@@ -1,0 +1,9 @@
+{
+  "sample_rate_hz": 100.0,
+  "delay_s": 0.01,
+  "gyro_noise_std": 0.005,
+  "gyro_bias_std": 0.002,
+  "tilt_noise_std_deg": 0.25,
+  "tilt_bias_std_deg": 0.2,
+  "validate_inputs": false
+}
