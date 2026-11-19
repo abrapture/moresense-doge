@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.poser-venv/
+.poser-uv-cache/
+.env
+.env.*
+/runtime/
+/runs/
+/usd/
+*.tfevents.*
+events.out.tfevents.*
+*.pt
+!/trained_policy_999/policy.pt
+!/checkpoints/v1_999/model_999.pt
